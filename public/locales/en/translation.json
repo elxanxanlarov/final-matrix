@@ -1,0 +1,158 @@
+{
+  "header": {
+    "home": "Home",
+    "shop": "Shop",
+    "pages": "Pages",
+    "contact": "Contact"
+  },
+  "productLang":"en",
+  "home": {
+    "hero": {
+      "slider-one": {
+        "span": "Let’s be smarter",
+        "title": "Enjoy your daily life in a smarter way...",
+        "description": "Smartwatches provide quick access to notifications, calls, messages, and apps, reducing the need to constantly check your phone.",
+        "preOrder": "Pre-Order",
+        "viewMore": "View More"
+      },
+      "slider-two": {
+        "span": "Discover the latest tech trends",
+        "title": "Explore the latest trends in technology...",
+        "description": "Discover new tech gadgets and innovations that make life easier and more enjoyable.",
+        "preOrder": "Pre-Order",
+        "viewMore": "View More"
+      },
+      "slider-three": {
+        "span": "Revolutionize your tech experience",
+        "title": "Transform your life with the latest tech innovations...",
+        "description": "Embrace the future with cutting-edge technology and the most modern innovations.",
+        "preOrder": "Pre-Order",
+        "viewMore": "View More"
+      },
+      "slider-four": {
+        "span": "Upgrade your tech with the latest gadgets",
+        "title": "Enhance your technology with the newest gadgets...",
+        "description": "Find the best technology products and upgrades to perfect your lifestyle.",
+        "preOrder": "Pre-Order",
+        "viewMore": "View More"
+      },
+      "newArrival": "NEW ARRIVAL",
+      "latestQpad": "Latest Qpad with keyboard",
+      "buyNow": "BUY NOW",
+      
+      "counter": {
+        "socialFollowers": "Social Followers",
+        "registeredAttendees": "Registered Attendees",
+        "salesRevenue": "Sales and Revenue Statistics",
+        "customerReviews": "Customer Reviews and Ratings"
+      },
+      "homeHighly": {
+        "recommendedTitle": "Highly Recommended",
+        "description": "Electronics products continue to drive innovation and shape the way we live, work, and interact with our environment.",
+        "viewAll": "View All",
+        "vrFest": "VR FEST",
+        "virtualRealityExperience": "Virtual Reality Experience",
+        "buyNow": "Buy Now"
+      },
+      "homeBest": {
+        "bestSellingTitle": "Best Selling Products",
+        "description": "Electronics products continue to drive innovation and shape the way we live, work, and interact with our environment.",
+        "viewAll": "View All",
+        "time": {
+          "days": "DAYS",
+          "hours": "HOURS",
+          "minutes": "MINUTES",
+          "seconds": "SECONDS"
+        },
+        "shopNow": "Shop Now",
+        "vrFest": "VR FEST",
+        "virtualRealityExperience": "Virtual Reality Experience",
+        "buyNow": "Buy Now"
+      },
+      "testimonial": {
+        "happiness": "Our Client’s Happiness",
+        "description": "The Best electronics products continue to drive innovation and shape",
+        "additionalInfo": "the way we live, work, and interact with our environment.",
+        "lang": "en"
+      }
+    }
+  },
+  "about":{
+    "hero": {
+      "title": "Our Dream is to be a Global Electronic Brand",
+      "description": "The best electronics products continue to drive innovation and shape the way we live, work, and interact with our environment. Opportunities for customers to test out products before making a purchase can include hands-on demonstrations of features and functionalities, allowing customers to experience the product firsthand.",
+      "shipping": "Free Shipping",
+      "shipping_description": "Free shipping for orders over $250",
+      "payment": "Flexible Payment",
+      "payment_description": "Easy and secure payment system",
+      "points": "Earn Points",
+      "points_description": "Shop more and earn points",
+      "img_alt": "Description of the hero image",
+      "latest_technology": "Latest Technology",
+      "best_team": "Best R&D Team",
+      "quick_servicing": "Quick Servicing",
+      "expert_team": "Expert Team",
+      "shop_now": "Shop Now"
+    },
+    "story": {
+      "title": "Our story and how we grow up",
+      "description": "The best electronics products continue to drive innovation and shape the way we live, work, and interact with our environment. Opportunities for customers to test out products before making a purchase.",
+      "mission_title": "Our Mission",
+      "mission": "To be the world's most innovative electronics brand, shaping the way we live, work, and interact with our environment. We provide opportunities for customers to test out products before making a purchase.",
+      "vision_title": "Our Vision",
+      "vision": "To drive innovation and shape the future with our products, enhancing the way we live, work, and interact with our environment. We aim to provide hands-on opportunities for customers to experience our products before buying.",
+      "img_alt": "Image depicting our story"
+    },
+    "team": {
+      "title": "Players behind the screen",
+      "description": "Smartwatches provide quick access to notifications, calls, messages, and apps right on your wrist, reducing the need to constantly check your phone.",
+      "members": [
+        {
+          "name": "Sophia Williams",
+          "position": "Head of Marketing"
+        },
+        {
+          "name": "James Smith",
+          "position": "Lead Developer"
+        },
+        {
+          "name": "Emma Johnson",
+          "position": "Creative Director"
+        }
+      ]
+    }
+  }, "instagram": {
+    "shopTitle": "Instagram Shop",
+    "subscribeTitle": "Subscribe to our Newsletter and get all of our updates",
+    "emailPlaceholder": "Enter Your Email",
+    "submitButton": "Submit Now"
+  },
+    "footer": {
+      "quickLinks1": "Quick Links",
+      "search": "Search",
+      "reviews": "Reviews",
+      "aboutUs": "About us",
+      "privacyPolicy": "Privacy Policy",
+      "quickLinks2": "Quick Links",
+      "blogs": "Blogs",
+      "singleBlog": "Single blog",
+      "register": "Register",
+      "faqs": "FAQ's",
+      "information": "Information",
+      "termsConditions": "Terms & Conditions",
+      "payment": "Payment",
+      "returnPolicy": "Return Policy",
+      "promotions": "Promotions",
+      "contactUs": "Contact us",
+      "company": "Company",
+      "myAccount": "My account",
+      "myCart": "My Cart",
+      "wishlist": "Wishlist",
+      "productCompare": "Product Compare",
+      "createAccount": "Create account",
+      "contactInfo": "Contact Info",
+      "address": "70 Washington Square South, New York, NY 10012, United States",
+      "phoneNumbers1": "+12345 678 910",
+      "phoneNumbers2": "+12345 678 109"
+    }  
+}

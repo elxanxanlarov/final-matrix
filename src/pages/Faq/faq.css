@@ -1,0 +1,22 @@
+.faq-head{
+    background-color: #F3F3F3;
+    padding: 4rem 0;
+    font-size: 1.8rem;
+    text-align: center;
+}
+.faq-body h3{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+}
+.ant-collapse-header{
+    align-items: center !important;
+}
+.ant-collapse-header-text{
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+.faq-col-body p{
+    margin: 1rem 0;
+    font-size: 1.3rem;
+}

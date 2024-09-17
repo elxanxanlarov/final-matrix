@@ -1,0 +1,67 @@
+.highly{
+    background-color:var(--white);
+    padding: 5rem 0;
+    color:var(--black);
+}
+.highly .highly-top {
+    padding: 4rem 0 !important;
+}
+.highly .highly-top .highly-head h3{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+.highly .highly-top .highly-head p{
+    font-size: 1.3rem;
+}
+.highly .highly-top .highly-head button{
+    border-radius: 2rem;
+    padding: .7rem 2rem;
+    background-color:var(--white);
+    color:var(--black);
+    border:1px solid var(--black);
+}
+.highly .highly-bottom .box{
+    height: 20rem;
+    color:#fff;
+    background-position:center;
+    background-size: 32rem;
+    transition: .5s;
+}
+.highly .highly-bottom .box:hover{
+    background-size: 35rem;
+
+}
+.highly .highly-bottom .box h3{  
+    font-size: 2.5rem;
+}
+.highly .highly-bottom .box-one{
+    background-image: url("./image/bottom-1.webp");
+    text-align: center;
+    padding: 2rem;
+    
+}
+.highly .highly-bottom .box-two{
+    background-image: url("./image/bottom-2.webp");
+    padding: 2rem;
+    
+}
+.highly .highly-bottom .box-three{
+    background-image: url("./image/bottom-3.webp");
+    padding-left: 3rem;
+    
+}
+
+.highly .highly-bottom .box-two .text-con{
+    margin-left: 10rem;
+    margin-top: 2rem;
+}
+.highly .highly-bottom .box-one .text-con{
+    margin-left: 10rem;
+}
+.highly .highly-bottom .box span {
+    color:rgb(180, 151, 108);
+}
+.highly .highly-bottom .box .link{
+    color:#fff;
+    text-decoration: underline;
+}

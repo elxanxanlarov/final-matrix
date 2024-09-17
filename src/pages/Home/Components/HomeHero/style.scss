@@ -1,0 +1,106 @@
+.hero{
+    background-color:#000;
+}
+.hero .carousel-item{
+    width: 100%;
+    height: 90vh;
+    background-color: black;
+    padding: 5rem 4rem;
+    padding-right: 0;
+    color:#fff;
+    background-position: center;
+    background-size: cover;
+    span{
+        color:rgb(180, 151, 108);
+        letter-spacing: .3rem;
+        font-size: 1.2rem;
+    }
+    h2{
+        font-size: 4.5rem;
+        font-weight: 600;
+    }
+    p{
+        font-size: 1.07rem;
+        margin: 1.4rem 0;
+    }
+    >div{
+        width: 50%;
+    }
+    .btn-con{
+        button{
+            border-radius: 2rem;
+        }
+        button:last-child{
+            border: 1px solid #fff;
+        }
+    }
+}
+html[native-dark-active] .carousel-control-next, html[native-dark-active] .carousel-control-prev {
+    background-color:transparent !important;
+}
+.hero .carousel-item:first-child{
+    background-image: url("./image/hero-top-1.png");
+}
+.hero .carousel-item:nth-child(2){
+    background-image: url("./image/hero-top-2.png");
+}
+.hero .carousel-item:nth-child(3){
+    background-image: url("./image/hero-top-1.png");
+}
+.hero .carousel-item:last-child{
+    background-image: url("./image/hero-top-2.png");
+}
+.carousel-control-next, .carousel-control-prev {
+    width: 6% !important;
+}
+
+.hero-bottom .row{
+    --bs-gutter-x:0;
+}
+.hero-bottom .box{
+    padding: 0 4rem !important ;
+    height: 15rem;
+    
+    background-position:center;
+    background-size:31.5rem;
+    transition: .5s;
+}
+.hero-bottom .box:hover{
+    background-size:34rem;
+
+}
+.hero-bottom .box-one{
+    background-image:url("./image/hero-bottom-1.png");
+}
+.hero-bottom .box-two{
+    background-image:url("./image/hero-bottom-2.png");
+}
+.hero-bottom .box-three{
+    background-image:url("./image/hero-bottom-3.png");
+
+}
+.hero-bottom .box *{
+    color:#fff;
+}
+.hero-bottom .box span{
+    color:rgb(180, 151, 108);
+}
+.hero-bottom .box .link{
+    text-decoration: underline;
+}
+
+@media (max-width:"777px") {
+    .hero .carousel-item{
+        height: 23rem;
+    } 
+    .hero .carousel-item span{
+        font-size: 1rem;
+    }
+    .hero .carousel-item h2{
+        font-size: 1.6rem;
+    }
+    .hero .carousel-item p{
+        font-size: 1rem;
+    }
+    
+}

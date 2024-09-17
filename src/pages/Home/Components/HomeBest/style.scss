@@ -1,0 +1,71 @@
+.best{
+    background-color:var(--white);
+    padding: 5rem 0;
+    color:var(--black);
+}
+.best .best-top {
+    padding: 4rem 0 !important;
+}
+.best .best-top .best-head h3{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+.best .best-top .best-head p{
+    font-size: 1.3rem;
+}
+.best .best-top .best-head button{
+    border-radius: 2rem;
+    padding: .7rem 2rem;
+    background-color:var(--white);
+    color:var(--black);
+    border:1px solid var(--black);
+}
+
+.best .best-bottom .body .box{
+    height: 18rem;
+    color:#fff;
+    background-position:center;
+    background-image: url("https://elexy-demo.myshopify.com/cdn/shop/files/banner-image-7.png?v=1710397157&width=550");
+    padding: 2rem;
+    border-radius:.5rem;
+    background-position:center;
+    background-size: 27rem;
+    transition: .5s;
+}
+.best .best-bottom .body .box:hover{
+    background-size: 29rem;
+
+}
+.best .best-bottom .body .box-one{
+    background-image:url("./image/bottom-1.webp");
+}
+.best .best-bottom .body .box-two{
+    background-image:url("./image/bottom-2.webp");
+}
+.best .best-bottom .body .box-three{
+    background-image:url("./image/bottom-3.webp");
+}
+
+.best .best-bottom .body {
+    padding-top: 5rem;
+}
+.best-bottom .head .time {
+    gap: 1.5rem;
+}
+.best-bottom .head .time .dots{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.best-bottom .head .time p{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.best-bottom .head button{
+    border:1px solid var(--black);
+    background-color:var(--white);
+    color:var(--black);
+}
+.best-bottom .body .text-con .link{
+    color:#fff;
+    text-decoration: underline;
+}

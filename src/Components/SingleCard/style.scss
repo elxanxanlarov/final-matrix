@@ -1,0 +1,74 @@
+
+.my-card{
+    background-color:var(--white);
+    color:var(--black);
+    border-radius:1rem;
+    overflow: hidden;
+    box-shadow: 1px 1px 8px -1px rgba(0,0,0,0.75);
+    user-select: none;
+}
+body.dark .my-card{
+    border:1px solid #fff;
+}
+.my-card .text-con{
+  padding: 1.4rem;
+}
+.my-card .text-con .link{
+  color:var(--black);
+}
+.my-card .img-block{
+    position: relative;
+}
+.home .my-card .img-block .icons{
+    position: absolute;
+    top: .5rem;
+    right: -3rem;
+    gap: .5rem;
+    transition: .5s;
+}
+.my-card:hover .img-block .icons{
+  right: 1rem;
+}
+.my-card .img-block  img{
+  height: 17rem;
+  object-fit: cover;
+} 
+.my-card .img-block .icons>div,
+.my-card .img-block .icons>.link{
+    background-color:var(--white);
+    color:var(--black);
+    border-radius:50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+
+}
+
+.heart-icon {
+    cursor: pointer;
+    color: #ccc; // Boş ürək üçün rəng
+  
+    &.heart-icon-filled {
+      color: red; // Dolu ürək üçün rəng
+    }
+  }
+
+  .icon-container {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
+  
+  .icon-container.clicked {
+    transform: scale(1.2); /* İkonanın böyüməsi */
+    color: #ff5722; /* Rəng dəyişməsi */
+  }
+  
+  .icon-container:hover {
+    cursor: pointer;
+  }
+  

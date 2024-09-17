@@ -1,0 +1,158 @@
+{
+  "header": {
+    "home": "Ana səhifə",
+    "shop": "Mağaza",
+    "pages": "Səhifələr",
+    "contact": "Əlaqə"
+  },
+  "productLang":"az",
+  "home": {
+    "hero": {
+      "slider-one": {
+        "span": "Daha ağıllı olaq",
+        "title": "Gündəlik həyatınızı daha ağıllı bir şəkildə yaşayın...",
+        "description": "Ağıllı saatlar, bildirişlərə, zənglərə, mesajlara və tətbiqlərə sürətli erişim təmin edir, telefonunuza daim baxma ehtiyacını azaldır.",
+        "preOrder": "Əvvəlcədən sifariş et",
+        "viewMore": "Daha çox bax"
+      },
+      "slider-two": {
+        "span": "Ən son texnologiya tendensiyalarını kəşf edin",
+        "title": "Texnologiyanın ən son tendensiyalarını araşdırın...",
+        "description": "Həyatı daha asan və daha zövqlü edən yeni texnologiya cihazlarını və yeniliklərini kəşf edin.",
+        "preOrder": "Əvvəlcədən sifariş et",
+        "viewMore": "Daha çox bax"
+      },
+      "slider-three": {
+        "span": "Texnologiya təcrübənizi inqilab edin",
+        "title": "Həyatınızı ən son texnologiya yenilikləri ilə dəyişdirin...",
+        "description": "Gələcəyi qabaqcıl texnologiya və ən müasir yeniliklərlə qarşılamaq.",
+        "preOrder": "Əvvəlcədən sifariş et",
+        "viewMore": "Daha çox bax"
+      },
+      "slider-four": {
+        "span": "Son texnologiya cihazları ilə texnologiyanızı təkmilləşdirin",
+        "title": "Texnologiyanızı ən yeni cihazlarla inkişaf etdirin...",
+        "description": "Həyat tərzinizi mükəmməlləşdirmək üçün ən yaxşı texnologiya məhsulları və yeniləmələri tapın.",
+        "preOrder": "Əvvəlcədən sifariş et",
+        "viewMore": "Daha çox bax"
+      },
+      "newArrival": "YENİ GƏLİŞ",
+      "latestQpad": "Son Qpad klaviatura ilə",
+      "buyNow": "İNDİ AL",
+      "counter": {
+        "socialFollowers": "Sosial İzləyicilər",
+        "registeredAttendees": "Qeydiyyatdan keçmiş İştirakçılar",
+        "salesRevenue": "Satış və Gəlir Statistikası",
+        "customerReviews": "Müştəri Rəyləri və Reytinqləri"
+      },
+      "homeHighly": {
+        "recommendedTitle": "Güclü Tövsiyə",
+        "description": "Elektron məhsullar innovasiyanı davam etdirir və bizim ətrafımızla necə yaşadığımızı, işlədiyimizi və əlaqə qurduğumuzu formalaşdırır.",
+        "viewAll": "Hamısına bax",
+        "vrFest": "VR FEST",
+        "virtualRealityExperience": "Virtual Reallıq Təcrübəsi",
+        "buyNow": "İndi al"
+      },
+      "homeBest": {
+        "bestSellingTitle": "Ən Çox Satılan Məhsullar",
+        "description": "Elektron məhsullar innovasiyanı davam etdirir və bizim ətrafımızla necə yaşadığımızı, işlədiyimizi və əlaqə qurduğumuzu formalaşdırır.",
+        "viewAll": "Hamısına bax",
+        "time": {
+          "days": "GÜNLƏR",
+          "hours": "SAATLAR",
+          "minutes": "DƏQİQƏLƏR",
+          "seconds": "SANIYELƏR"
+        },
+        "shopNow": "İndi alış-veriş et",
+        "vrFest": "VR FEST",
+        "virtualRealityExperience": "Virtual Reallıq Təcrübəsi",
+        "buyNow": "İndi al"
+      },
+      "testimonial": {
+        "happiness": "Müştərilərimizin Məmnuniyyəti",
+        "description": "Ən yaxşı elektron məhsullar innovasiyanı davam etdirir və",
+        "additionalInfo": "həyatımızı, işləmə üsulumuzu və ətrafımızla əlaqə qurmağımızı formalaşdırır.",
+        "lang": "az"
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Global Elektron Marka Olmaq Arzumuzdur",
+      "description": "Ən yaxşı elektronika məhsulları innovasiyanı təşviq etməyə və həyat tərzimizi, işimizi və mühitlə qarşılıqlı əlaqəmizi formalaşdırmağa davam edir. Müştərilərin məhsulları satın almadan əvvəl sınamaq imkanları, xüsusiyyətlərin və funksionallıqların əllə təqdimatlarını daxil edə bilər, müştərilərə məhsulu ilk dəfə təcrübədən keçirmək imkanı tanıyır.",
+      "shipping": "Pulsuz Çatdırılma",
+      "shipping_description": "250 dollar və daha yuxarı sifarişlər üçün pulsuz çatdırılma",
+      "payment": "Fleksibil Ödəniş",
+      "payment_description": "Asan və təhlükəsiz ödəniş sistemi",
+      "points": "Bal Toplama",
+      "points_description": "Daha çox alış-veriş edin və ballar qazanın",
+      "img_alt": "Hero şəklinin təsviri",
+      "latest_technology": "Son Texnologiya",
+      "best_team": "Ən Yaxşı R&D Komandası",
+      "quick_servicing": "Tez Servis",
+      "expert_team": "Ekspert Komandası",
+      "shop_now": "İndi Alış-veriş Et"
+    },
+    "story": {
+      "title": "Hekayəmiz və necə böyüdük",
+      "description": "Ən yaxşı elektronika məhsulları innovasiyanı təşviq etməyə və həyat tərzimizi, işimizi və mühitlə qarşılıqlı əlaqəmizi formalaşdırmağa davam edir. Müştərilərə məhsulları satın almadan əvvəl sınama fürsətləri təqdim edirik.",
+      "mission_title": "Missiyamız",
+      "mission": "Dünyanın ən innovativ elektronika markası olmaq, həyat tərzimizi, işimizi və mühitlə qarşılıqlı əlaqəmizi formalaşdırmaq. Müştərilərə məhsulları satın almadan əvvəl sınama fürsətləri təqdim edirik.",
+      "vision_title": "Görüşümüz",
+      "vision": "Məhsullarımız vasitəsilə innovasiyanı təşviq etmək və gələcəyi formalaşdırmaq, həyat tərzimizi, işimizi və mühitlə qarşılıqlı əlaqəmizi artırmaq. Müştərilərə məhsullarımızı satın almadan əvvəl təcrübə etmək imkanı təqdim edirik.",
+      "img_alt": "Hekayəmizi təsvir edən şəkil"
+    },
+    "team": {
+      "title": "Ekranın arxasındakı oyunçular",
+      "description": "Ağıllı saatlər sizə bildirişlərə, zənglərə, mesajlara və tətbiqlərə qolunuzdan birbaşa sürətli giriş imkanı verir, beləliklə telefonunuza daimi baxma ehtiyacını azaldır.",
+      "members": [
+        {
+          "name": "Sophia Williams",
+          "position": "Marketinq Direktoru"
+        },
+        {
+          "name": "James Smith",
+          "position": "Baş İnkişafçı"
+        },
+        {
+          "name": "Emma Johnson",
+          "position": "Kreativ Direktor"
+        }
+      ]
+    }
+  },
+  "instagram": {
+    "shopTitle": "Instagram Mağazası",
+    "subscribeTitle": "Bülletenimizə abunə olun və bütün yeniliklərimizdən xəbərdar olun",
+    "emailPlaceholder": "E-poçt adresinizi daxil edin",
+    "submitButton": "İndi Göndər"
+  },
+  "footer": {
+    "quickLinks1": "Tez bağlantılar",
+    "search": "Axtarış",
+    "reviews": "Rəylər",
+    "aboutUs": "Haqqımızda",
+    "privacyPolicy": "Məxfilik siyasəti",
+    "quickLinks2": "Tez bağlantılar",
+    "blogs": "Bloqlar",
+    "singleBlog": "Tək blog",
+    "register": "Qeydiyyat",
+    "faqs": "Tez-tez verilən suallar",
+    "information": "Məlumat",
+    "termsConditions": "Şərtlər və Qaydalar",
+    "payment": "Ödəmə",
+    "returnPolicy": "Geri qaytarma siyasəti",
+    "promotions": "Təkliflər",
+    "contactUs": "Bizimlə əlaqə",
+    "company": "Şirkət",
+    "myAccount": "Hesabım",
+    "myCart": "Səbətim",
+    "wishlist": "Arzular siyahısı",
+    "productCompare": "Məhsul müqayisəsi",
+    "createAccount": "Hesab yarat",
+    "contactInfo": "Əlaqə məlumatları",
+    "address": "70 Washington Square South, New York, NY 10012, Birləşmiş Ştatlar",
+    "phoneNumbers1": "+12345 678 910",
+    "phoneNumbers2": "+12345 678 109"
+  }
+}

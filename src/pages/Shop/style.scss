@@ -1,0 +1,44 @@
+.shop .shop-body .top .dropdown{
+    width: 10rem;
+}
+.shop .shop-body .top .dropdown button{
+    width: 11rem;
+}
+.shop .shop-head {
+    padding: 4rem 0;
+    background-color:#F3F3F3;
+}
+.shop .shop-head h4{
+    font-size: 2.8rem;
+}
+.shop .shop-body .top {
+    border-bottom: 1px solid;
+    padding: 2rem 0;
+    margin: 3rem 0;
+}
+.shop .shop-body .top .right .sort-span{
+    font-weight: 600;
+}
+.shop .shop-body .bottom{
+    height:auto ;
+}
+.shop .shop-body .bottom .category{
+    background-color:#F3F3F3;
+    padding: .4rem;
+}
+.shop .shop-body .bottom .category ul li{
+    font-size: 1.2rem;
+    padding:.7rem 1rem;
+    cursor: pointer;
+    background-color:#fff;
+    transition: .3s;
+    -webkit-user-select: none;
+}
+.shop .shop-body .bottom .category ul li.active{
+    background-color:#000;
+    color:#fff;
+}
+.shop .shop-body .bottom .category ul li:hover:not(.shop .shop-body .bottom .category ul li.active){
+    background-color:#c7bdbd;
+    color:#fff;
+}

@@ -1,0 +1,66 @@
+.contact-page .contact-head{
+    padding: 4rem 0;
+    background-color: #F3F3F3;
+}
+.contact-page .contact-body{
+    padding: 5rem 0;
+}
+.contact-page .contact-body .left ul li:first-child h3{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.contact-page .contact-body .left ul li:nth-child(2) p{
+    font-size: 1.4rem;
+    /* padding: 1rem 0; */
+    font-weight: 400;
+}
+.contact-page .contact-body .left ul li span{
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #858585;
+}
+.contact-page .contact-body .left ul li {
+    padding: 1rem 0;
+}
+.contact-page .contact-body .left ul li p{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.contact-page .contact-body .right{
+    background-color:#F3F3F3;
+    padding: 2rem 4rem;
+    border-radius: 2rem;
+}
+.contact-page .contact-body .right ul li:first-child h3{
+    font-weight: 700;
+}
+.contact-page .contact-body .right ul li{
+    margin: 2.5rem 0;
+}
+.contact-page .contact-body .right ul li input{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid;
+    width: 100%;
+    padding: .5rem 0;
+    font-size: 1.1rem;
+    background-color:transparent;
+}
+.contact-page .contact-body .right ul li input::placeholder,
+.contact-page .contact-body .right ul li textarea::placeholder{
+    font-weight: 700;
+    color:black ;
+}
+.contact-page .contact-body .right ul li textarea{
+    width: 100%;
+    background-color:transparent;
+    border:none;
+    outline: none;
+    font-size: 1.1rem;
+    border-bottom:1px solid;
+    resize: none;
+}
+.contact-page .contact-body .right .btn{
+    border-radius: 2rem;
+    padding: .7rem 2rem;
+}
