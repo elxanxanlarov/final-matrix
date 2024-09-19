@@ -2,7 +2,7 @@ import { useState } from "react";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 import "./style.scss";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 
 const Counter = () => {
   const [counterOn, setCounterOn] = useState(false);
@@ -28,69 +28,81 @@ const Counter = () => {
       <div className="counter">
         <div className="my-container">
           <div className="dp-between">
-            <div className="box">
-              <p>
-                {counterOn ? (
-                  <CountUp
-                    start={0}
-                    end={10000}
-                    duration={5}
-                    onEnd={() => setCountUpValues((prev) => ({ ...prev, count1: 10000 }))}
-                  />
-                ) : (
-                  countUpValues.count1
-                )}
-                +
-              </p>
-              <span>{t('home.hero.counter.socialFollowers')}</span>
+            <div className="dp-between">
+              <div className="box">
+                <p>
+                  {counterOn ? (
+                    <CountUp
+                      start={0}
+                      end={10000}
+                      duration={5}
+                      onEnd={() =>
+                        setCountUpValues((prev) => ({ ...prev, count1: 10000 }))
+                      }
+                    />
+                  ) : (
+                    countUpValues.count1
+                  )}
+                  +
+                </p>
+                <span>{t("home.hero.counter.socialFollowers")}</span>
+              </div>
+              <div className="box">
+                <p>
+                  {counterOn ? (
+                    <CountUp
+                      start={0}
+                      end={6000}
+                      duration={5}
+                      onEnd={() =>
+                        setCountUpValues((prev) => ({ ...prev, count2: 6000 }))
+                      }
+                    />
+                  ) : (
+                    countUpValues.count2
+                  )}
+                  +
+                </p>
+                <span>{t("home.hero.counter.registeredAttendees")}</span>
+              </div>
             </div>
-            <div className="box">
-              <p>
-                {counterOn ? (
-                  <CountUp
-                    start={0}
-                    end={6000}
-                    duration={5}
-                    onEnd={() => setCountUpValues((prev) => ({ ...prev, count2: 6000 }))}
-                  />
-                ) : (
-                  countUpValues.count2
-                )}
-                +
-              </p>
-              <span>{t('home.hero.counter.registeredAttendees')}</span>
-            </div>
-            <div className="box">
-              <p>
-                {counterOn ? (
-                  <CountUp
-                    start={0}
-                    end={8000}
-                    duration={5}
-                    onEnd={() => setCountUpValues((prev) => ({ ...prev, count3: 8000 }))}
-                  />
-                ) : (
-                  countUpValues.count3
-                )}
-                +
-              </p>
-              <span>{t('home.hero.counter.salesRevenue')}</span>
-            </div>
-            <div className="box">
-              <p>
-                {counterOn ? (
-                  <CountUp
-                    start={0}
-                    end={98}
-                    duration={5}
-                    onEnd={() => setCountUpValues((prev) => ({ ...prev, count4: 98 }))}
-                  />
-                ) : (
-                  countUpValues.count4
-                )}
-                %
-              </p>
-              <span>{t('home.hero.counter.customerReviews')}</span>
+            <div className="dp-between">
+              <div className="box">
+                <p>
+                  {counterOn ? (
+                    <CountUp
+                      start={0}
+                      end={8000}
+                      duration={5}
+                      onEnd={() =>
+                        setCountUpValues((prev) => ({ ...prev, count3: 8000 }))
+                      }
+                    />
+                  ) : (
+                    countUpValues.count3
+                  )}
+                  +
+                </p>
+                <span>{t("home.hero.counter.salesRevenue")}</span>
+              </div>
+              <div className="box">
+                <p>
+                  {counterOn ? (
+                    <CountUp
+                      start={0}
+                      end={98}
+                      duration={5}
+                      onEnd={() =>
+                        setCountUpValues((prev) => ({ ...prev, count4: 98 }))
+                      }
+                    />
+                  ) : (
+                    countUpValues.count4
+                  )}
+                  %
+                </p>
+                <span>{t("home.hero.counter.customerReviews")}</span>
+              </div>
             </div>
           </div>
         </div>

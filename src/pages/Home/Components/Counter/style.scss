@@ -11,3 +11,28 @@
 font-size: 4rem ;
     font-weight: 700;
 }
+.counter>div>div>div{
+    gap: 8rem;
+}
+@media (max-width: 768px) {
+    .counter>div>div>div{
+        gap: 5rem;
+    }
+    .counter>div>div{
+        flex-direction: column;
+    }
+    .counter .box p{
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 568px) {
+    .counter .box p{
+        font-size: 3rem;
+    }
+}
+@media (max-width: 468px) {
+    .counter .box p{
+        font-size: 2rem;
+    }
+}

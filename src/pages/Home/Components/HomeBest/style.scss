@@ -13,7 +13,7 @@
 .best .best-top .best-head p{
     font-size: 1.3rem;
 }
-.best .best-top .best-head button{
+.best .best-top .best-head .btn{
     border-radius: 2rem;
     padding: .7rem 2rem;
     background-color:var(--white);
@@ -60,7 +60,7 @@
     font-size: 3rem;
     font-weight: 700;
 }
-.best-bottom .head button{
+.best-bottom .head .btn{
     border:1px solid var(--black);
     background-color:var(--white);
     color:var(--black);
@@ -68,4 +68,24 @@
 .best-bottom .body .text-con .link{
     color:#fff;
     text-decoration: underline;
+}
+
+
+
+@media (max-width:"700px") {
+    .best-bottom .head{
+        flex-direction: column;
+    }
+    .best-bottom .head .btn{
+    margin-top: 2rem;
+    }
+    .best .best-top .best-head >div{
+        flex-direction: column;
+    }   
+    .best .best-top .best-head >div .btn{
+        margin-top: 1rem;
+    }
+    .best .best-bottom .body .box{
+        margin-top: .5rem;
+    }
 }

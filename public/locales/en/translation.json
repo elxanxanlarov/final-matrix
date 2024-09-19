@@ -5,7 +5,7 @@
     "pages": "Pages",
     "contact": "Contact"
   },
-  "productLang":"en",
+  "productLang": "en",
   "home": {
     "hero": {
       "slider-one": {
@@ -30,8 +30,8 @@
         "viewMore": "View More"
       },
       "slider-four": {
-        "span": "Upgrade your tech with the latest gadgets",
-        "title": "Enhance your technology with the newest gadgets...",
+        "span": "Discover the latest tech trends",
+        "title": "Explore the latest trends in technology...",
         "description": "Find the best technology products and upgrades to perfect your lifestyle.",
         "preOrder": "Pre-Order",
         "viewMore": "View More"
@@ -39,7 +39,6 @@
       "newArrival": "NEW ARRIVAL",
       "latestQpad": "Latest Qpad with keyboard",
       "buyNow": "BUY NOW",
-      
       "counter": {
         "socialFollowers": "Social Followers",
         "registeredAttendees": "Registered Attendees",
@@ -50,24 +49,33 @@
         "recommendedTitle": "Highly Recommended",
         "description": "Electronics products continue to drive innovation and shape the way we live, work, and interact with our environment.",
         "viewAll": "View All",
-        "vrFest": "VR FEST",
-        "virtualRealityExperience": "Virtual Reality Experience",
-        "buyNow": "Buy Now"
+        "box-1": {
+          "title": "VR Fest",
+          "description": "Virtual Reality Experience",
+          "buyNow": "Buy Now"
+        },
+        "box-2": {
+          "title": "New Arrival",
+          "description": "Make Your Life Easier & Stylish",
+          "buyNow": "Buy Now"
+        },
+        "box-3": {
+          "title": "Black Friday Offer",
+          "description": "Get your QPad as early as you can",
+          "buyNow": "Buy Now"
+        }
       },
       "homeBest": {
         "bestSellingTitle": "Best Selling Products",
         "description": "Electronics products continue to drive innovation and shape the way we live, work, and interact with our environment.",
         "viewAll": "View All",
+          "buyNow": "Buy Now",
         "time": {
           "days": "DAYS",
           "hours": "HOURS",
           "minutes": "MINUTES",
           "seconds": "SECONDS"
-        },
-        "shopNow": "Shop Now",
-        "vrFest": "VR FEST",
-        "virtualRealityExperience": "Virtual Reality Experience",
-        "buyNow": "Buy Now"
+        }
       },
       "testimonial": {
         "happiness": "Our Client’s Happiness",
@@ -75,9 +83,24 @@
         "additionalInfo": "the way we live, work, and interact with our environment.",
         "lang": "en"
       }
+    },
+    "banner": {
+      "securityCamera": {
+        "title": "Security Camera",
+        "discount": "Up to 72% Off Mega Offer"
+      },
+      "limitedTime": {
+        "title": "Limited Time Discount",
+        "discount": "Get up to 75% Off"
+      },
+      "laptop": {
+        "title": "Mega Discount for New Laptop",
+        "discount": "65% Off"
+      },
+      "buyNow": "Buy Now"
     }
   },
-  "about":{
+  "about": {
     "hero": {
       "title": "Our Dream is to be a Global Electronic Brand",
       "description": "The best electronics products continue to drive innovation and shape the way we live, work, and interact with our environment. Opportunities for customers to test out products before making a purchase can include hands-on demonstrations of features and functionalities, allowing customers to experience the product firsthand.",
@@ -121,38 +144,39 @@
         }
       ]
     }
-  }, "instagram": {
-    "shopTitle": "Instagram Shop",
+  },
+  "instagram": {
+    "shopTitle": "Instagram",
     "subscribeTitle": "Subscribe to our Newsletter and get all of our updates",
     "emailPlaceholder": "Enter Your Email",
     "submitButton": "Submit Now"
   },
-    "footer": {
-      "quickLinks1": "Quick Links",
-      "search": "Search",
-      "reviews": "Reviews",
-      "aboutUs": "About us",
-      "privacyPolicy": "Privacy Policy",
-      "quickLinks2": "Quick Links",
-      "blogs": "Blogs",
-      "singleBlog": "Single blog",
-      "register": "Register",
-      "faqs": "FAQ's",
-      "information": "Information",
-      "termsConditions": "Terms & Conditions",
-      "payment": "Payment",
-      "returnPolicy": "Return Policy",
-      "promotions": "Promotions",
-      "contactUs": "Contact us",
-      "company": "Company",
-      "myAccount": "My account",
-      "myCart": "My Cart",
-      "wishlist": "Wishlist",
-      "productCompare": "Product Compare",
-      "createAccount": "Create account",
-      "contactInfo": "Contact Info",
-      "address": "70 Washington Square South, New York, NY 10012, United States",
-      "phoneNumbers1": "+12345 678 910",
-      "phoneNumbers2": "+12345 678 109"
-    }  
+  "footer": {
+    "quickLinks1": "Quick Links",
+    "search": "Search",
+    "reviews": "Reviews",
+    "aboutUs": "About us",
+    "privacyPolicy": "Privacy Policy",
+    "quickLinks2": "Quick Links",
+    "blogs": "Blogs",
+    "singleBlog": "Single blog",
+    "register": "Register",
+    "faqs": "FAQ's",
+    "information": "Information",
+    "termsConditions": "Terms & Conditions",
+    "payment": "Payment",
+    "returnPolicy": "Return Policy",
+    "promotions": "Promotions",
+    "contactUs": "Contact us",
+    "company": "Company",
+    "myAccount": "My account",
+    "myCart": "My Cart",
+    "wishlist": "Wishlist",
+    "productCompare": "Product Compare",
+    "createAccount": "Create account",
+    "contactInfo": "Contact Info",
+    "address": "70 Washington Square South, New York, NY 10012, United States",
+    "phoneNumbers1": "+12345 678 910",
+    "phoneNumbers2": "+12345 678 109"
+  }
 }

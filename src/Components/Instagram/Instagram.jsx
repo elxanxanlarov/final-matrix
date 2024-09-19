@@ -13,28 +13,28 @@ const Instagram = ({ dpNone, dpNoneTwo }) => {
         </div>
         <div className="body row g-0">
           <div className="col-md-3 col-sm-6 col-12">
-            <div className="box dp-center">
+            <div className="box box-one dp-center">
               <div className="icon-con dp-center">
                 <FaInstagram className="icon" />
               </div>
             </div>
           </div>
           <div className="col-md-3 col-sm-6 col-12">
-            <div className="box dp-center">
+            <div className="box box-two dp-center">
               <div className="icon-con dp-center">
                 <FaInstagram className="icon" />
               </div>
             </div>
           </div>
           <div className="col-md-3 col-sm-6 col-12">
-            <div className="box dp-center">
+            <div className="box box-three dp-center">
               <div className="icon-con dp-center">
                 <FaInstagram className="icon" />
               </div>
             </div>
           </div>
           <div className="col-md-3 col-sm-6 col-12">
-            <div className="box dp-center">
+            <div className="box box-four dp-center">
               <div className="icon-con dp-center">
                 <FaInstagram className="icon" />
               </div>

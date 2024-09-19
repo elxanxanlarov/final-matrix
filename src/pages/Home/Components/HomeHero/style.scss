@@ -27,11 +27,12 @@
         width: 50%;
     }
     .btn-con{
-        button{
-            border-radius: 2rem;
+        .btn:first-child{
+            display: none;
         }
-        button:last-child{
-            border: 1px solid #fff;
+        .btn:last-child{
+            background-color:var(--white);
+            color:var(--black);
         }
     }
 }
@@ -60,10 +61,10 @@ html[native-dark-active] .carousel-control-next, html[native-dark-active] .carou
 .hero-bottom .box{
     padding: 0 4rem !important ;
     height: 15rem;
-    
     background-position:center;
     background-size:31.5rem;
     transition: .5s;
+    background-repeat: no-repeat;
 }
 .hero-bottom .box:hover{
     background-size:34rem;
@@ -103,4 +104,16 @@ html[native-dark-active] .carousel-control-next, html[native-dark-active] .carou
         font-size: 1rem;
     }
     
+}
+@media (max-width:"550px") {
+    .hero .carousel-item{
+height: 40vh;
+padding-top: 1rem;
+    }
+    .hero .carousel-item p{
+        display: none;
+    }
+    .hero .carousel-item >div{
+        width: 70%;
+    }
 }

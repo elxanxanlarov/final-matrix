@@ -55,6 +55,7 @@ const HomeHero = () => {
                   transition={{ duration: 0.5 }}
                 >
                   <div>
+                    
                     <span>{t("home.hero.slider-two.span")}</span>
                     <h2>{t("home.hero.slider-two.title")}</h2>
                     <p>{t("home.hero.slider-two.description")}</p>

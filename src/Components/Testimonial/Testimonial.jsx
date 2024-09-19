@@ -61,7 +61,7 @@ const Testimonial = () => {
       <div className="my-container">
         <div className="testimonial-con">
           <div className="testimonial-head">
-            <h3>{t('home.hero.testimonial.happiness')}</h3>
+            <h3>{t("home.hero.testimonial.happiness")}</h3>
             <div className="dp-between">
               <p className="left-p">
                 {t("home.hero.testimonial.description")}
@@ -111,15 +111,10 @@ const Testimonial = () => {
                             <FaStar />
                           </div>
                           <span>{item.title}</span>
-                          <p>
-                            “This smart home assistant has become very important
-                            part of my daily routine. From managing my schedule
-                            and setting reminders to controlling smart home
-                            devices and answering questions.”
-                          </p>
+                          <p>{item.text}</p>
                           <div className="client-info">
-                            <p>Brain Armstrong</p>
-                            <span>CEO Deplex Group</span>
+                            <p>{item.name}</p>
+                            <span>{item.position}</span>
                           </div>
                         </div>
                       </div>
@@ -142,15 +137,10 @@ const Testimonial = () => {
                             <FaStar />
                           </div>
                           <span>{item.title}</span>
-                          <p>
-                            “This smart home assistant has become very important
-                            part of my daily routine. From managing my schedule
-                            and setting reminders to controlling smart home
-                            devices and answering questions.”
-                          </p>
+                          <p>{item.text}</p>
                           <div className="client-info">
-                            <p>Brain Armstrong</p>
-                            <span>CEO Deplex Group</span>
+                            <p>{item.name}</p>
+                            <span>{item.position}</span>
                           </div>
                         </div>
                       </div>

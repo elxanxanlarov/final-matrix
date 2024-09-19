@@ -9,7 +9,9 @@ const HomeBest = () => {
   const { t } = useTranslation(); // Hook for translation
   const [currentTime, setCurrentTime] = useState(new Date());
   const productData = useSelector((state) => state.product);
-  const langProduct=productData.filter(item=>item.lang==t("productLang"));
+  const langProduct = productData.filter(
+    (item) => item.lang == t("productLang")
+  );
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentTime(new Date());
@@ -31,7 +33,9 @@ const HomeBest = () => {
             <h3>{t("home.hero.homeBest.bestSellingTitle")}</h3>
             <div className="dp-between">
               <p>{t("home.hero.homeBest.description")}</p>
-              <button className="btn btn-light">{t("home.hero.homeBest.viewAll")}</button>
+              <Link className="btn btn-light">
+                {t("home.hero.homeBest.viewAll")}
+              </Link>
             </div>
           </div>
           <div className="best-body row g-5 mt-4">
@@ -63,44 +67,42 @@ const HomeBest = () => {
                 <span>{t("home.hero.homeBest.time.seconds")}</span>
               </div>
             </div>
-            <button className="btn btn-light">{t("home.hero.homeBest.shopNow")}</button>
+            <Link to="/shop" className="btn btn-light">
+              {t("home.hero.homeBest.buyNow")}
+            </Link>
           </div>
           <div className="body row">
             <div className="col-md-4 col-sm-12 col-12">
               <div className="box box-one dp-align">
                 <div className="text-con">
-                  <span>{t("home.hero.homeBest.vrFest")}</span>
-                  <h3>
-                    {t("home.hero.homeBest.virtualRealityExperience")}
-                  </h3>
-                  <Link className="link" to="#">
-                    {t("home.hero.homeBest.buyNow")}
+                  <span>{t("home.banner.securityCamera.title")}</span>
+                  <h3>{t("home.banner.securityCamera.discount")}</h3>
+                  <Link to="/shop" className="link">
+                    {t("home.banner.buyNow")}
                   </Link>
                 </div>
               </div>
             </div>
+
             <div className="col-md-4 col-sm-12 col-12">
               <div className="box box-two dp-align">
                 <div className="text-con">
-                  <span>{t("home.hero.homeBest.vrFest")}</span>
-                  <h3>
-                    {t("home.hero.homeBest.virtualRealityExperience")}
-                  </h3>
-                  <Link className="link" to="#">
-                    {t("home.hero.homeBest.buyNow")}
+                  <span>{t("home.banner.limitedTime.title")}</span>
+                  <h3>{t("home.banner.limitedTime.discount")}</h3>
+                  <Link to="/shop" className="link">
+                    {t("home.banner.buyNow")}
                   </Link>
                 </div>
               </div>
             </div>
+
             <div className="col-md-4 col-sm-12 col-12">
               <div className="box box-three dp-align">
                 <div className="text-con">
-                  <span>{t("home.hero.homeBest.vrFest")}</span>
-                  <h3>
-                    {t("home.hero.homeBest.virtualRealityExperience")}
-                  </h3>
-                  <Link className="link" to="#">
-                    {t("home.hero.homeBest.buyNow")}
+                  <span>{t("home.banner.laptop.title")}</span>
+                  <h3>{t("home.banner.laptop.discount")}</h3>
+                  <Link to="/shop" className="link">
+                    {t("home.banner.buyNow")}
                   </Link>
                 </div>
               </div>

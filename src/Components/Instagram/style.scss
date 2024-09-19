@@ -9,11 +9,22 @@
     font-weight: 700;
 }
 .instagram-top .body .box{
-    background-image: url("https://elexy-demo.myshopify.com/cdn/shop/files/instagram-1.png?v=1710752282");
     height: 17rem;
     background-position: center;
     background-size: cover;
     cursor: pointer;
+}
+.instagram-top .body .box-one{
+    background-image: url("https://elexy-demo.myshopify.com/cdn/shop/files/instagram-1.png?v=1710752282");
+}
+.instagram-top .body .box-two{
+    background-image: url("https://elexy-demo.myshopify.com/cdn/shop/files/instagram-2.png?v=1710752841");
+}
+.instagram-top .body .box-three{
+    background-image: url("https://elexy-demo.myshopify.com/cdn/shop/files/instagram-3.png?v=1710752842");
+}
+.instagram-top .body .box-four{
+    background-image: url("https://elexy-demo.myshopify.com/cdn/shop/files/instagram-4.png?v=1710752841");
 }
 .instagram-top .body .box .icon-con{
     background-color: #E3A77E;
@@ -50,11 +61,23 @@
     border: none;
     color: #fff;
     background-color:#000;
-    width: 66%;
+    width: calc(100% - 140px)
 }
     .instagram-bottom .input-con button{
         background-color:var(--white);
         color:var(--black);
         border-radius:2rem;
         
+    }
+
+
+    @media (max-width:"765px") {
+        .instagram-bottom>div>div{
+            flex-direction: column;
+        }
+        .instagram-bottom>div>div .input-con{
+            flex-direction: column;
+            width: 100%;
+            margin-top: 1rem;
+        }
     }

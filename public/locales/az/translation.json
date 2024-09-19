@@ -5,7 +5,7 @@
     "pages": "Səhifələr",
     "contact": "Əlaqə"
   },
-  "productLang":"az",
+  "productLang": "az",
   "home": {
     "hero": {
       "slider-one": {
@@ -49,24 +49,48 @@
         "recommendedTitle": "Güclü Tövsiyə",
         "description": "Elektron məhsullar innovasiyanı davam etdirir və bizim ətrafımızla necə yaşadığımızı, işlədiyimizi və əlaqə qurduğumuzu formalaşdırır.",
         "viewAll": "Hamısına bax",
-        "vrFest": "VR FEST",
-        "virtualRealityExperience": "Virtual Reallıq Təcrübəsi",
-        "buyNow": "İndi al"
+        "box-1": {
+          "title": "VR Festivalı",
+          "description": "Virtual Reallıq Təcrübəsi",
+          "buyNow": "İndi Al"
+        },
+        "box-2": {
+          "title": "Yeni Gəliş",
+          "description": "Həyatınızı Daha Asan və Stil Sahibi Edin",
+          "buyNow": "İndi Al"
+        },
+        "box-3": {
+          "title": "Qara Cümə Təklifi",
+          "description": "QPad-nızı vaxtında əldə edin",
+          "buyNow": "İndi Al"
+        }
       },
       "homeBest": {
         "bestSellingTitle": "Ən Çox Satılan Məhsullar",
         "description": "Elektron məhsullar innovasiyanı davam etdirir və bizim ətrafımızla necə yaşadığımızı, işlədiyimizi və əlaqə qurduğumuzu formalaşdırır.",
         "viewAll": "Hamısına bax",
+        "buyNow": "İndi Al",
         "time": {
           "days": "GÜNLƏR",
           "hours": "SAATLAR",
           "minutes": "DƏQİQƏLƏR",
           "seconds": "SANIYELƏR"
         },
-        "shopNow": "İndi alış-veriş et",
-        "vrFest": "VR FEST",
-        "virtualRealityExperience": "Virtual Reallıq Təcrübəsi",
-        "buyNow": "İndi al"
+        "banner": {
+          "securityCamera": {
+            "title": "Təhlükəsizlik Kamerası",
+            "discount": "72%-ə qədər endirim böyük təklif"
+          },
+          "limitedTime": {
+            "title": "Məhdud vaxt üçün endirim",
+            "discount": "75%-ə qədər endirim"
+          },
+          "laptop": {
+            "title": "Yeni Noutbuk üçün mega endirim",
+            "discount": "65% endirim"
+          },
+          "buyNow": "İndi Al"
+        }
       },
       "testimonial": {
         "happiness": "Müştərilərimizin Məmnuniyyəti",
@@ -122,7 +146,7 @@
     }
   },
   "instagram": {
-    "shopTitle": "Instagram Mağazası",
+    "shopTitle": "Instagram",
     "subscribeTitle": "Bülletenimizə abunə olun və bütün yeniliklərimizdən xəbərdar olun",
     "emailPlaceholder": "E-poçt adresinizi daxil edin",
     "submitButton": "İndi Göndər"
