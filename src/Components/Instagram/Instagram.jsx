@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 import { FaInstagram } from "react-icons/fa";
 import "./style.scss";
 
@@ -9,35 +9,47 @@ const Instagram = ({ dpNone, dpNoneTwo }) => {
     <section className="instagram">
       <div className={`instagram-top ${dpNone}`}>
         <div className="head text-center py-5">
-          <h3>{t('instagram.shopTitle')}</h3>
+          <h3>{t("instagram.shopTitle")}</h3>
         </div>
         <div className="body row g-0">
           <div className="col-md-3 col-sm-6 col-12">
             <div className="box box-one dp-center">
-              <div className="icon-con dp-center">
+              <a
+                className="icon-con dp-center"
+                href="https://instagram.com/trendyolcom"
+              >
                 <FaInstagram className="icon" />
-              </div>
+              </a>
             </div>
           </div>
           <div className="col-md-3 col-sm-6 col-12">
             <div className="box box-two dp-center">
-              <div className="icon-con dp-center">
+              <a
+                className="icon-con dp-center"
+                href="https://instagram.com/trendyolcom"
+              >
                 <FaInstagram className="icon" />
-              </div>
+              </a>
             </div>
           </div>
           <div className="col-md-3 col-sm-6 col-12">
             <div className="box box-three dp-center">
-              <div className="icon-con dp-center">
+              <a
+                className="icon-con dp-center"
+                href="https://instagram.com/trendyolcom"
+              >
                 <FaInstagram className="icon" />
-              </div>
+              </a>
             </div>
           </div>
           <div className="col-md-3 col-sm-6 col-12">
             <div className="box box-four dp-center">
-              <div className="icon-con dp-center">
+              <a
+                className="icon-con dp-center"
+                href="https://instagram.com/trendyolcom"
+              >
                 <FaInstagram className="icon" />
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -45,10 +57,15 @@ const Instagram = ({ dpNone, dpNoneTwo }) => {
       <div className={`instagram-bottom ${dpNoneTwo}`}>
         <div className="my-container">
           <div className="bottom-con dp-between">
-            <h2>{t('instagram.subscribeTitle')}</h2>
+            <h2>{t("instagram.subscribeTitle")}</h2>
             <div className="input-con">
-              <input placeholder={t('instagram.emailPlaceholder')} type="text" />
-              <button className="btn btn-light">{t('instagram.submitButton')}</button>
+              <input
+                placeholder={t("instagram.emailPlaceholder")}
+                type="text"
+              />
+              <button className="btn btn-light">
+                {t("instagram.submitButton")}
+              </button>
             </div>
           </div>
         </div>

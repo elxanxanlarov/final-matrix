@@ -13,6 +13,7 @@
     background-position: center;
     background-size: cover;
     cursor: pointer;
+    transition: .4s;
 }
 .instagram-top .body .box-one{
     background-image: url("https://elexy-demo.myshopify.com/cdn/shop/files/instagram-1.png?v=1710752282");
@@ -34,8 +35,12 @@
     font-size: 3.5rem;
     border-radius: 50%;
     display: none;
+    
 }
 
+.instagram-top .body .box:hover {
+   filter: brightness(0.7)
+}
 .instagram-top .body .box:hover .icon-con{
     display: flex;
 }
@@ -61,7 +66,7 @@
     border: none;
     color: #fff;
     background-color:#000;
-    width: calc(100% - 140px)
+    width: calc(100% - 120px)
 }
     .instagram-bottom .input-con button{
         background-color:var(--white);

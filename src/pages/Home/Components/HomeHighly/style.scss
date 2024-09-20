@@ -1,6 +1,5 @@
 .highly {
-    // background: rgb(226, 226, 226);
-    // background: linear-gradient(90deg, rgba(226, 226, 226, 1) 0%, rgba(143, 143, 251, 1) 35%, rgba(144, 155, 158, 1) 100%);
+    background:var(--white);
     padding: 5rem 0;
     color: var(--black);
 }
@@ -16,11 +15,12 @@
 
 .highly .highly-top .highly-head p {
     font-size: 1.3rem;
+    width: 50%;
 }
 
 .highly .highly-top .highly-head button {
     border-radius: 2rem;
-    padding: .7rem 2rem;
+    padding: .7rem 1rem;
     background-color: var(--white);
     color: var(--black);
     border: 1px solid var(--black);

@@ -36,9 +36,23 @@
         "preOrder": "Pre-Order",
         "viewMore": "View More"
       },
-      "newArrival": "NEW ARRIVAL",
-      "latestQpad": "Latest Qpad with keyboard",
-      "buyNow": "BUY NOW",
+      "herobottom": {
+        "box-1": {
+          "subtitle": "New Arrival",
+          "title": "Latest Qpad with Keyboard",
+          "cta": "Buy Now"
+        },
+        "box-2": {
+          "subtitle": "Get up to 35% off",
+          "title": "And then there was pro versions",
+          "cta": "Buy Now"
+        },
+        "box-3": {
+          "subtitle": "Hurry Up!",
+          "title": "Modern & Style Headphone",
+          "cta": "Buy Now"
+        }
+      },
       "counter": {
         "socialFollowers": "Social Followers",
         "registeredAttendees": "Registered Attendees",
@@ -98,6 +112,26 @@
         "discount": "65% Off"
       },
       "buyNow": "Buy Now"
+    }
+  },
+  "shop": {
+    "title": "Shop",
+    "sortBy": "Sort by:",
+    "dropdown": {
+      "alphabetAsc": "Alphabetically, A-Z",
+      "alphabetDesc": "Alphabetically, Z-A",
+      "priceAsc": "Price, low to high",
+      "priceDesc": "Price, high to low",
+      "dateAsc": "Date, old to new",
+      "dateDesc": "Date, new to old"
+    },
+    "category": {
+      "title": "Category",
+      "all": "All",
+      "laptop": "Laptop",
+      "mobile": "Mobile",
+      "router": "Router",
+      "speaker": "Speaker"
     }
   },
   "about": {

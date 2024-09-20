@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "./style.scss"
 const AboutHead = () => {
+
   return (
     <>
       <div className="about-head">

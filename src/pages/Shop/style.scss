@@ -1,3 +1,7 @@
+.shop {
+    background-color:var(--white);
+    color:var(--black);
+}
 .shop .shop-body .top .dropdown{
     width: 10rem;
 }
@@ -6,7 +10,7 @@
 }
 .shop .shop-head {
     padding: 4rem 0;
-    background-color:#F3F3F3;
+    background-color:var(--light-grey);
 }
 .shop .shop-head h4{
     font-size: 2.8rem;
@@ -18,19 +22,30 @@
 }
 .shop .shop-body .top .right .sort-span{
     font-weight: 600;
+    background-color:var(--white) !important;
+    color:var(--black) !important;
 }
+.shop .shop-body .top .right .sort-span+ .dropdown .btn,
+.shop .shop-body .top .right .sort-span+ .dropdown .dropdown-menu ,
+.shop .shop-body .top .right .sort-span+ .dropdown .dropdown-item {
+    background-color:var(--white) !important;
+    color:var(--black) !important;
+}
+
 .shop .shop-body .bottom{
     height:auto ;
 }
 .shop .shop-body .bottom .category{
-    background-color:#F3F3F3;
+    background-color:var(--light-grey);
+    border:#fff;
     padding: .4rem;
 }
 .shop .shop-body .bottom .category ul li{
     font-size: 1.2rem;
     padding:.7rem 1rem;
     cursor: pointer;
-    background-color:#fff;
+    background-color:var(--white);
+    color:var(--black);
     transition: .3s;
     -webkit-user-select: none;
 }

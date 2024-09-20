@@ -66,6 +66,9 @@ html[native-dark-active] .carousel-control-next, html[native-dark-active] .carou
     transition: .5s;
     background-repeat: no-repeat;
 }
+.hero-bottom .box .text-con{
+    width: 60%;
+}
 .hero-bottom .box:hover{
     background-size:34rem;
 

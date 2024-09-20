@@ -45,7 +45,7 @@ const FaqPage = () => {
         <div className="my-container">
           <div className="faq-body">
             <h3>Shipping information</h3>
-            <Collapse items={items} defaultActiveKey={["1"]} />;
+            <Collapse items={items} defaultActiveKey={["1"]} />
           </div>
         </div>
       </section>

@@ -14,10 +14,10 @@ const HomeHero = () => {
   };
 
   useEffect(() => {
-    const carousel = document.querySelector('#carouselExample');
-    carousel.addEventListener('slide.bs.carousel', animateText);
+    const carousel = document.querySelector("#carouselExample");
+    carousel.addEventListener("slide.bs.carousel", animateText);
     return () => {
-      carousel.removeEventListener('slide.bs.carousel', animateText);
+      carousel.removeEventListener("slide.bs.carousel", animateText);
     };
   }, []);
 
@@ -42,8 +42,12 @@ const HomeHero = () => {
                     <h2>{t("home.hero.slider-one.title")}</h2>
                     <p>{t("home.hero.slider-one.description")}</p>
                     <div className="btn-con dp-align gap-3">
-                      <Link to="/shop" className="btn btn-light">{t("home.hero.slider-one.preOrder")}</Link>
-                      <Link to="/shop" className="btn btn-dark">{t("home.hero.slider-one.viewMore")}</Link>
+                      <Link to="/shop" className="btn btn-light">
+                        {t("home.hero.slider-one.preOrder")}
+                      </Link>
+                      <Link to="/shop" className="btn btn-dark">
+                        {t("home.hero.slider-one.viewMore")}
+                      </Link>
                     </div>
                   </div>
                 </motion.div>
@@ -55,13 +59,16 @@ const HomeHero = () => {
                   transition={{ duration: 0.5 }}
                 >
                   <div>
-                    
                     <span>{t("home.hero.slider-two.span")}</span>
                     <h2>{t("home.hero.slider-two.title")}</h2>
                     <p>{t("home.hero.slider-two.description")}</p>
                     <div className="btn-con dp-align gap-3">
-                      <Link to="/shop" className="btn btn-light">{t("home.hero.slider-two.preOrder")}</Link>
-                      <Link to="/shop" className="btn btn-dark">{t("home.hero.slider-two.viewMore")}</Link>
+                      <Link to="/shop" className="btn btn-light">
+                        {t("home.hero.slider-two.preOrder")}
+                      </Link>
+                      <Link to="/shop" className="btn btn-dark">
+                        {t("home.hero.slider-two.viewMore")}
+                      </Link>
                     </div>
                   </div>
                 </motion.div>
@@ -77,8 +84,12 @@ const HomeHero = () => {
                     <h2>{t("home.hero.slider-three.title")}</h2>
                     <p>{t("home.hero.slider-three.description")}</p>
                     <div className="btn-con dp-align gap-3">
-                      <Link to="/shop" className="btn btn-light">{t("home.hero.slider-three.preOrder")}</Link>
-                      <Link to="/shop" className="btn btn-dark">{t("home.hero.slider-three.viewMore")}</Link>
+                      <Link to="/shop" className="btn btn-light">
+                        {t("home.hero.slider-three.preOrder")}
+                      </Link>
+                      <Link to="/shop" className="btn btn-dark">
+                        {t("home.hero.slider-three.viewMore")}
+                      </Link>
                     </div>
                   </div>
                 </motion.div>
@@ -94,8 +105,12 @@ const HomeHero = () => {
                     <h2>{t("home.hero.slider-four.title")}</h2>
                     <p>{t("home.hero.slider-four.description")}</p>
                     <div className="btn-con dp-align gap-3">
-                      <Link to="/shop" className="btn btn-light">{t("home.hero.slider-four.preOrder")}</Link>
-                      <Link to="/shop" className="btn btn-dark">{t("home.hero.slider-four.viewMore")}</Link>
+                      <Link to="/shop" className="btn btn-light">
+                        {t("home.hero.slider-four.preOrder")}
+                      </Link>
+                      <Link to="/shop" className="btn btn-dark">
+                        {t("home.hero.slider-four.viewMore")}
+                      </Link>
                     </div>
                   </div>
                 </motion.div>
@@ -126,33 +141,33 @@ const HomeHero = () => {
             <div data-aos="zoom-in-right" className="col-md-4 col-sm-12 col-12">
               <div className="box dp-align box-one">
                 <div className="text-con">
-                  <span>{t("home.hero.newArrival")}</span>
-                  <h3>
-                    {t("home.hero.latestQpad")}
-                  </h3>
-                  <Link className="link">{t("home.hero.buyNow")}</Link>
+                  <span>{t("home.hero.herobottom.box-1.subtitle")}</span>
+                  <h3>{t("home.hero.herobottom.box-1.title")}</h3>
+                  <Link className="link">
+                    {t("home.hero.herobottom.box-1.cta")}
+                  </Link>
                 </div>
               </div>
             </div>
             <div data-aos="zoom-in-down" className="col-md-4 col-sm-12 col-12">
               <div className="box dp-align box-two">
                 <div className="text-con">
-                  <span>{t("home.hero.newArrival")}</span>
-                  <h3>
-                    {t("home.hero.latestQpad")}
-                  </h3>
-                  <Link className="link">{t("home.hero.buyNow")}</Link>
+                  <span>{t("home.hero.herobottom.box-2.subtitle")}</span>
+                  <h3>{t("home.hero.herobottom.box-2.title")}</h3>
+                  <Link className="link">
+                    {t("home.hero.herobottom.box-2.cta")}
+                  </Link>
                 </div>
               </div>
             </div>
             <div data-aos="zoom-in-left" className="col-md-4 col-sm-12 col-12">
               <div className="box dp-align box-three">
                 <div className="text-con">
-                  <span>{t("home.hero.newArrival")}</span>
-                  <h3>
-                    {t("home.hero.latestQpad")}
-                  </h3>
-                  <Link className="link">{t("home.hero.buyNow")}</Link>
+                  <span>{t("home.hero.herobottom.box-3.subtitle")}</span>
+                  <h3>{t("home.hero.herobottom.box-3.title")}</h3>
+                  <Link className="link">
+                    {t("home.hero.herobottom.box-3.cta")}
+                  </Link>
                 </div>
               </div>
             </div>

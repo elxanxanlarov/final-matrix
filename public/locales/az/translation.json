@@ -36,9 +36,23 @@
         "preOrder": "Əvvəlcədən sifariş et",
         "viewMore": "Daha çox bax"
       },
-      "newArrival": "YENİ GƏLİŞ",
-      "latestQpad": "Son Qpad klaviatura ilə",
-      "buyNow": "İNDİ AL",
+      "herobottom": {
+        "box-1": {
+          "subtitle": "Yeni Gəliş",
+          "title": "Son Model Qpad Klaviatura ilə",
+          "cta": "İndi Al"
+        },
+        "box-2": {
+          "subtitle": "35%-ə qədər Endirim",
+          "title": "Sonra Pro versiyaları gəldi",
+          "cta": "İndi Al"
+        },
+        "box-3": {
+          "subtitle": "Tələsin!",
+          "title": "Modern və Tərz Qulaqlıq",
+          "cta": "İndi Al"
+        }
+      },
       "counter": {
         "socialFollowers": "Sosial İzləyicilər",
         "registeredAttendees": "Qeydiyyatdan keçmiş İştirakçılar",
@@ -46,7 +60,7 @@
         "customerReviews": "Müştəri Rəyləri və Reytinqləri"
       },
       "homeHighly": {
-        "recommendedTitle": "Güclü Tövsiyə",
+        "recommendedTitle": "Tövsiyə Olunan Məhsullar",
         "description": "Elektron məhsullar innovasiyanı davam etdirir və bizim ətrafımızla necə yaşadığımızı, işlədiyimizi və əlaqə qurduğumuzu formalaşdırır.",
         "viewAll": "Hamısına bax",
         "box-1": {
@@ -74,22 +88,7 @@
           "days": "GÜNLƏR",
           "hours": "SAATLAR",
           "minutes": "DƏQİQƏLƏR",
-          "seconds": "SANIYELƏR"
-        },
-        "banner": {
-          "securityCamera": {
-            "title": "Təhlükəsizlik Kamerası",
-            "discount": "72%-ə qədər endirim böyük təklif"
-          },
-          "limitedTime": {
-            "title": "Məhdud vaxt üçün endirim",
-            "discount": "75%-ə qədər endirim"
-          },
-          "laptop": {
-            "title": "Yeni Noutbuk üçün mega endirim",
-            "discount": "65% endirim"
-          },
-          "buyNow": "İndi Al"
+          "seconds": "SANIYƏLƏR"
         }
       },
       "testimonial": {
@@ -98,8 +97,43 @@
         "additionalInfo": "həyatımızı, işləmə üsulumuzu və ətrafımızla əlaqə qurmağımızı formalaşdırır.",
         "lang": "az"
       }
+    },
+    "banner": {
+      "securityCamera": {
+        "title": "Təhlükəsizlik Kamerası",
+        "discount": "72%-ə qədər endirim böyük təklif"
+      },
+      "limitedTime": {
+        "title": "Məhdud vaxt üçün endirim",
+        "discount": "75%-ə qədər endirim"
+      },
+      "laptop": {
+        "title": "Yeni Noutbuk üçün mega endirim",
+        "discount": "65% endirim"
+      },
+      "buyNow": "İndi Al"
     }
-  },
+  }, 
+    "shop": {
+      "title": "Mağaza",
+      "sortBy": "Çeşidlə:",
+      "dropdown": {
+        "alphabetAsc": "Əlifba sırası ilə, A-Z",
+        "alphabetDesc": "Əlifba sırası ilə, Z-A",
+        "priceAsc": "Qiymət, aşağıdan yuxarıya",
+        "priceDesc": "Qiymət, yuxarıdan aşağıya",
+        "dateAsc": "Tarix, köhnədən təzəyə",
+        "dateDesc": "Tarix, təzədən köhnəyə"
+      },
+      "category": {
+        "title": "Kateqoriya",
+        "all": "Hamısı",
+        "laptop": "Noutbuk",
+        "mobile": "Mobil",
+        "router": "Router",
+        "speaker": "Dinamik"
+      }
+    },
   "about": {
     "hero": {
       "title": "Global Elektron Marka Olmaq Arzumuzdur",
@@ -126,6 +160,7 @@
       "vision": "Məhsullarımız vasitəsilə innovasiyanı təşviq etmək və gələcəyi formalaşdırmaq, həyat tərzimizi, işimizi və mühitlə qarşılıqlı əlaqəmizi artırmaq. Müştərilərə məhsullarımızı satın almadan əvvəl təcrübə etmək imkanı təqdim edirik.",
       "img_alt": "Hekayəmizi təsvir edən şəkil"
     },
+
     "team": {
       "title": "Ekranın arxasındakı oyunçular",
       "description": "Ağıllı saatlər sizə bildirişlərə, zənglərə, mesajlara və tətbiqlərə qolunuzdan birbaşa sürətli giriş imkanı verir, beləliklə telefonunuza daimi baxma ehtiyacını azaldır.",

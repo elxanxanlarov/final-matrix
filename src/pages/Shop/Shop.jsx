@@ -1,19 +1,21 @@
-import {useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next"; // Tərcümə üçün
 import "./style.scss";
 import SingleCard from "../../Components/SingleCard/SingleCard";
 import { useSelector } from "react-redux";
 
 const Shop = () => {
+  const { t } = useTranslation(); // Tərcümə hook-u
   const productData = useSelector((state) => state.product);
-  
-
+  const langProduct = productData.filter(
+    (item) => item.lang == t("productLang")
+  );
   const [selectedItem, setSelectedItem] = useState(
-    localStorage.getItem("productSort") || ""
+    localStorage.getItem("productSort") || "Price, high to low"
   );
   const [categoryItem, setCategoryItem] = useState(
-    localStorage.getItem("category") || "All"
+    localStorage.getItem("category") || t("shop.category.all")
   );
-
   useEffect(() => {
     if (selectedItem) {
       localStorage.setItem("productSort", selectedItem);
@@ -25,17 +27,17 @@ const Shop = () => {
 
   const handleSort = (products, sortOption) => {
     switch (sortOption) {
-      case "Price, low to high":
+      case t("shop.dropdown.priceAsc"):
         return products.sort((a, b) => a.price - b.price);
-      case "Price, high to low":
+      case t("shop.dropdown.priceDesc"):
         return products.sort((a, b) => b.price - a.price);
-      case "Alphabetically, A-Z":
+      case t("shop.dropdown.alphabetAsc"):
         return products.sort((a, b) => a.title.localeCompare(b.title));
-      case "Alphabetically, Z-A":
+      case t("shop.dropdown.alphabetDesc"):
         return products.sort((a, b) => b.title.localeCompare(a.title));
-      case "Date, old to new":
+      case t("shop.dropdown.dateAsc"):
         return products.sort((a, b) => new Date(a.date) - new Date(b.date));
-      case "Date, new to old":
+      case t("shop.dropdown.dateDesc"):
         return products.sort((a, b) => new Date(b.date) - new Date(a.date));
       default:
         return products;
@@ -57,7 +59,7 @@ const Shop = () => {
       <div className="shop-con">
         <div className="shop-head">
           <div className="my-container">
-            <h4>Shop</h4>
+            <h4>{t("shop.title")}</h4>
           </div>
         </div>
         <div className="shop-body">
@@ -66,7 +68,7 @@ const Shop = () => {
               <div className="left"></div>
               <div className="right dp-align gap-4">
                 <div className="dp-align gap-2">
-                  <span className="sort-span">Sort by:</span>
+                  <span className="sort-span">{t("shop.sortBy")}</span>
                   <div className="dropdown">
                     <button
                       className="btn btn-outline-dark dropdown-toggle dp-between"
@@ -83,7 +85,7 @@ const Shop = () => {
                           href="#"
                           onClick={handleSelect}
                         >
-                          Alphabetically, A-Z
+                          {t("shop.dropdown.alphabetAsc")}
                         </a>
                       </li>
                       <li>
@@ -92,7 +94,7 @@ const Shop = () => {
                           href="#"
                           onClick={handleSelect}
                         >
-                          Alphabetically, Z-A
+                          {t("shop.dropdown.alphabetDesc")}
                         </a>
                       </li>
                       <li>
@@ -101,7 +103,7 @@ const Shop = () => {
                           href="#"
                           onClick={handleSelect}
                         >
-                          Price, low to high
+                          {t("shop.dropdown.priceAsc")}
                         </a>
                       </li>
                       <li>
@@ -110,7 +112,7 @@ const Shop = () => {
                           href="#"
                           onClick={handleSelect}
                         >
-                          Price, high to low
+                          {t("shop.dropdown.priceDesc")}
                         </a>
                       </li>
                       <li>
@@ -119,7 +121,7 @@ const Shop = () => {
                           href="#"
                           onClick={handleSelect}
                         >
-                          Date, old to new
+                          {t("shop.dropdown.dateAsc")}
                         </a>
                       </li>
                       <li>
@@ -128,7 +130,7 @@ const Shop = () => {
                           href="#"
                           onClick={handleSelect}
                         >
-                          Date, new to old
+                          {t("shop.dropdown.dateDesc")}
                         </a>
                       </li>
                     </ul>
@@ -139,47 +141,55 @@ const Shop = () => {
             <div className="bottom row">
               <div className="col-md-3">
                 <div className="category">
-                  <h3>Category</h3>
+                  <h3>{t("shop.category.title")}</h3>
                   <ul>
                     <li
                       onClick={clickCategory}
                       className={`category-li ${
-                        categoryItem === "All" ? "active" : ""
+                        categoryItem === t("shop.category.all") ? "active" : ""
                       }`}
                     >
-                      All
+                      {t("shop.category.all")}
                     </li>
                     <li
                       onClick={clickCategory}
                       className={`category-li ${
-                        categoryItem === "Laptop" ? "active" : ""
+                        categoryItem === t("shop.category.laptop")
+                          ? "active"
+                          : ""
                       }`}
                     >
-                      Laptop
+                      {t("shop.category.laptop")}
                     </li>
                     <li
                       onClick={clickCategory}
                       className={`category-li ${
-                        categoryItem === "Mobile" ? "active" : ""
+                        categoryItem === t("shop.category.mobile")
+                          ? "active"
+                          : ""
                       }`}
                     >
-                      Mobile
+                      {t("shop.category.mobile")}
                     </li>
                     <li
                       onClick={clickCategory}
                       className={`category-li ${
-                        categoryItem === "Router" ? "active" : ""
+                        categoryItem === t("shop.category.router")
+                          ? "active"
+                          : ""
                       }`}
                     >
-                      Router
+                      {t("shop.category.router")}
                     </li>
                     <li
                       onClick={clickCategory}
                       className={`category-li ${
-                        categoryItem === "Speaker" ? "active" : ""
+                        categoryItem === t("shop.category.speaker")
+                          ? "active"
+                          : ""
                       }`}
                     >
-                      Speaker
+                      {t("shop.category.speaker")}
                     </li>
                   </ul>
                 </div>
@@ -187,9 +197,10 @@ const Shop = () => {
               <div className="col-md-9">
                 <div className="products row g-3">
                   {handleSort(
-                    productData.filter(
+                    langProduct.filter(
                       (item) =>
-                        categoryItem === "All" || item.category === categoryItem
+                        categoryItem === t("shop.category.all") ||
+                        item.category === categoryItem
                     ),
                     selectedItem
                   ).map((item) => (

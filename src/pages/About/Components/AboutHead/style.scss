@@ -1,12 +1,17 @@
 .about-head {
-    padding: 3rem 0;
+    padding: 7rem 0;
     background-color:#F3F3F3;
+    background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0zODAtMDcta255Z2FwNmouanBn.jpg");
+    background-size: cover;
+    color:#F3F3F3;
+    background-repeat: no-repeat;
 }
 .about-head h3{
     font-size: 3rem;
 }
+
 .about-head >div .link{
-    color:#000;
+    color:#fff;
 }
 .about-head >div .link:hover{
     text-decoration: underline;

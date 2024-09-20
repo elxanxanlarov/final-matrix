@@ -17,3 +17,9 @@
 .about-team .team-con .body .my-box .text-con{
     padding: .5rem;
 }
+
+@media (max-width:"700px") {
+    .about-team .team-con .head{
+        width: 90%;
+    }
+}

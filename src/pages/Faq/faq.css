@@ -1,13 +1,25 @@
+    
+.faq-page{
+    background-color: var(--light-grey);
+    color:var(--black); 
+    padding-bottom: 4rem;
+}
 .faq-head{
-    background-color: #F3F3F3;
+    background-color: var(--light-grey);
+    color:var(--black);
     padding: 4rem 0;
     font-size: 1.8rem;
     text-align: center;
+}
+.faq-body *{
+    background-color: var(--white);
+    color:var(--black);  
 }
 .faq-body h3{
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 4rem;
+    background-color:transparent;
 }
 .ant-collapse-header{
     align-items: center !important;

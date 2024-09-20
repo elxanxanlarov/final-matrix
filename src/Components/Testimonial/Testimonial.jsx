@@ -34,7 +34,7 @@ const testimonialsAZ = [
     stars: 5,
     title: "Ağıllı Ev Asistenti",
     text: "Bu ağıllı ev asistenti gündəlik işlərimdə çox vacib rol oynamağa başladı. Cədvəlimi idarə etməkdən və xatırlatmalar qurmaqdan tutmuş, ağıllı ev cihazlarını idarə etməyə və suallarıma cavab verməyə qədər hər işimdə faydalıdır.",
-    name: "Beyin Əliyev",
+    name: "Willie Bradley",
     position: "CEO Deplex Group",
   },
   {
@@ -42,7 +42,7 @@ const testimonialsAZ = [
     stars: 5,
     title: "Ən keyfiyyətli məhsul",
     text: "Məhsulun keyfiyyəti əladır. Bu, gündəlik həyatımda ağıllı cihazlarla ünsiyyət tərzimi tamamilə dəyişdi.",
-    name: "Liza Həsənova",
+    name: "Lisa Decamp",
     position: "Investor, Zemlex Co.",
   },
   {
@@ -50,7 +50,7 @@ const testimonialsAZ = [
     stars: 5,
     title: "Möhtəşəm tikinti keyfiyyəti",
     text: "Tikinti keyfiyyəti mükəmməldir, performansı isə daha da yaxşıdır. Ağıllı ev sistemini təkmilləşdirmək istəyənlərə şiddətlə tövsiyə edirəm.",
-    name: "Kəmalə Əliyeva",
+    name: "Cameron Williamson",
     position: "Bank işçisi, Simtom Bank Co.",
   },
 ];

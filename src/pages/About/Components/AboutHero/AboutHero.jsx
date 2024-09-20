@@ -21,7 +21,7 @@ const AboutHero = () => {
                 >
                   <img
                     src="../../../../../src/pages/About/Components/AboutHero/image/hero.webp"
-                    alt={t('about.hero.img_alt')} // Daha spesifik təsvir əlavə edin
+                    alt={t('about.hero.img_alt')} 
                   />
                 </div>
               </div>

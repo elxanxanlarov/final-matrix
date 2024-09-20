@@ -9,13 +9,16 @@ img{
 :root{
     --white:#fff;
     --black:#000;
+    --light-grey:#F3F3F3;
 }
 .dark{
     --white:#000;
     --black:#fff;
+    --light-grey:black;
 }
 body,html{
     overflow-x: hidden !important;
+    position: relative;
 }
 body.menu-active{
     overflow-y: hidden !important;
