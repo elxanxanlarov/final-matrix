@@ -1,6 +1,10 @@
+.contact-page{
+    background-color:var(--white);
+    color:var(--black);
+}
 .contact-page .contact-head{
     padding: 4rem 0;
-    background-color: #F3F3F3;
+    background-color: var(--light-grey);
 }
 .contact-page .contact-body{
     padding: 5rem 0;
@@ -11,7 +15,6 @@
 }
 .contact-page .contact-body .left ul li:nth-child(2) p{
     font-size: 1.4rem;
-    /* padding: 1rem 0; */
     font-weight: 400;
 }
 .contact-page .contact-body .left ul li span{
@@ -21,13 +24,15 @@
 }
 .contact-page .contact-body .left ul li {
     padding: 1rem 0;
+    color:var(--black);
 }
 .contact-page .contact-body .left ul li p{
     font-size: 1.5rem;
     font-weight: 700;
 }
 .contact-page .contact-body .right{
-    background-color:#F3F3F3;
+    background-color:var(--light-grey);
+    color:var(--black);
     padding: 2rem 4rem;
     border-radius: 2rem;
 }
@@ -45,15 +50,17 @@
     padding: .5rem 0;
     font-size: 1.1rem;
     background-color:transparent;
+    color:var(--black);
 }
 .contact-page .contact-body .right ul li input::placeholder,
 .contact-page .contact-body .right ul li textarea::placeholder{
     font-weight: 700;
-    color:black ;
+    color:var(--black);
 }
 .contact-page .contact-body .right ul li textarea{
     width: 100%;
     background-color:transparent;
+    color:var(--black);
     border:none;
     outline: none;
     font-size: 1.1rem;

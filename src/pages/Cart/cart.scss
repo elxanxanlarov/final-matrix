@@ -1,5 +1,71 @@
+
+body.dark .cart-page {
+    background-color:black;
+    color: #fff;
+}
+body.dark .table th ,
+body.dark .table td {
+    background-color:black;
+    color: #fff;
+}
 .total{
-    border:1px solid;
-    width: 30%;
+    text-align: center;
+    width: 100%;
     padding: 2rem;
+}
+.total >div>div:first-child{
+    font-size: 1.3rem;
+    margin: 1rem 0;
+}
+.total  .btn-con .btn{
+    border-radius:2rem !important;
+    font-size: 1.4rem;
+}
+.total span{
+    font-weight: 600;
+}
+.btns-con{
+    border:1px solid #d5cccc;
+    width: 6rem;
+    border-radius: 5rem;
+    overflow: hidden;
+}
+body.dark .btns-con .my-btn{
+    color:#fff;
+}
+.btns-con .my-btn{
+    border:none;
+    background-color:transparent;
+    font-size: 1.2rem;
+    padding: .3rem .6rem;
+    transition: .5s;
+}
+body.dark .btns-con .my-btn:hover{
+    color:black;
+}
+.btns-con .my-btn:hover{
+    background-color:rgb(249, 242, 242);
+}
+.price-con div:last-child{
+    display: none;
+}
+.price{
+    font-size: 1.3rem;
+}
+
+@media (max-width: 568px){
+    .rp-none{
+        display: none !important;
+    }
+    .price-con div:last-child{
+        display: flex;
+    }
+    .product{
+        flex-direction: column;
+    }
+    .total{
+        border:1px solid;
+        width: 100%;
+        padding: 2rem;
+    }
 }

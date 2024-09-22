@@ -160,7 +160,7 @@
       "vision": "Məhsullarımız vasitəsilə innovasiyanı təşviq etmək və gələcəyi formalaşdırmaq, həyat tərzimizi, işimizi və mühitlə qarşılıqlı əlaqəmizi artırmaq. Müştərilərə məhsullarımızı satın almadan əvvəl təcrübə etmək imkanı təqdim edirik.",
       "img_alt": "Hekayəmizi təsvir edən şəkil"
     },
-
+    
     "team": {
       "title": "Ekranın arxasındakı oyunçular",
       "description": "Ağıllı saatlər sizə bildirişlərə, zənglərə, mesajlara və tətbiqlərə qolunuzdan birbaşa sürətli giriş imkanı verir, beləliklə telefonunuza daimi baxma ehtiyacını azaldır.",
@@ -180,11 +180,53 @@
       ]
     }
   },
+  "faq": {
+    "title": "Göndərmə məlumatları",
+    "items": [
+      {
+        "label": "Avtomobillərimizdə hər hansı bir zəmanət veririkmi?",
+        "content": [
+          "Avtomobilin hissələri və komponentləri üçün məhdud zəmanət mövcuddur.",
+          "Məhdud zəmanət avtomobil alındığında sizə aid olanıdır."
+        ]
+      },
+      {
+        "label": "Avtomobili əldə etmədən əvvəl tam ödəniş etməlisinizmi?",
+        "content": [
+          "Avtomobilinizi tam ödəniş etməyinizin lazım olduğu haqqında yanlış təsəvvür var.",
+          "Həqiqətən də, avtomobili maliyyələşdirməklə əldə edə bilərsiniz."
+        ]
+      },
+      {
+        "label": "Bu gün yeni bir avtomobilin ortalama dəyəri nədir?",
+        "content": [
+          "Bu gün yeni bir avtomobilin ortalama dəyəri $36,000-dir.",
+          "Bu rəqəm avtomobilin qiymətini və bütün əlavələri əhatə edir."
+        ]
+      }
+    ]
+  },
   "instagram": {
     "shopTitle": "Instagram",
     "subscribeTitle": "Bülletenimizə abunə olun və bütün yeniliklərimizdən xəbərdar olun",
     "emailPlaceholder": "E-poçt adresinizi daxil edin",
     "submitButton": "İndi Göndər"
+  },
+  "contact": {
+    "title": "Əlaqə",
+    "home": "Ana səhifə",
+    "collaborate": "Gəlin əməkdaşlıq edək",
+    "description": "Ən yaxşı elektronika məhsulları yeniliyi sürətləndirir. Biz mühitimizlə yaşayıb, işləyir və qarşılıqlı əlaqə qururuq, müştərilərə məhsulları satın almadan əvvəl test etməyə imkan yaradırıq.",
+    "phone": "Telefon:",
+    "email": "Email:",
+    "office": "Baş ofis",
+    "officeAddress": "70 Washington Square, New York, NY 10012, ABŞ",
+    "sayHello": "Salam de",
+    "name": "Ad:",
+    "emailInput": "Email:",
+    "phoneInput": "Telefon Nömrəsi:",
+    "message": "Mesaj:",
+    "send": "Göndər"
   },
   "footer": {
     "quickLinks1": "Tez bağlantılar",

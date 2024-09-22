@@ -179,11 +179,54 @@
       ]
     }
   },
+
   "instagram": {
     "shopTitle": "Instagram",
     "subscribeTitle": "Subscribe to our Newsletter and get all of our updates",
     "emailPlaceholder": "Enter Your Email",
     "submitButton": "Submit Now"
+  },
+  "faq": {
+    "title": "Shipping information",
+    "items": [
+      {
+        "label": "Do we offer any warranties on our cars?",
+        "content": [
+          "There is a limited warranty on the parts and components of the car.",
+          "The limited warranty is what you are entitled to when the car is purchased."
+        ]
+      },
+      {
+        "label": "Do you need to pay for your car in full before you get it?",
+        "content": [
+          "It's a common misconception that you need to pay for your car in full before you get it.",
+          "You can actually purchase a car with financing."
+        ]
+      },
+      {
+        "label": "What is the average cost of a new car these days?",
+        "content": [
+          "The average cost of a new car these days is $36,000.",
+          "This number includes the price of the car and all the extras."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "home": "Home",
+    "collaborate": "Let’s Collaborate",
+    "description": "The best electronics products continue to drive innovation. We live, work, and interact with our environment, providing opportunities for customers to test out products before making a purchase.",
+    "phone": "Phone:",
+    "email": "Email:",
+    "office": "Head office",
+    "officeAddress": "70 Washington Square, New York, NY 10012, USA",
+    "sayHello": "Say hello",
+    "name": "Name:",
+    "emailInput": "Email:",
+    "phoneInput": "Phone Number:",
+    "message": "Message:",
+    "send": "Send Now"
   },
   "footer": {
     "quickLinks1": "Quick Links",

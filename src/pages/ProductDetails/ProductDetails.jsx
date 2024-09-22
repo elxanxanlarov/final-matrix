@@ -36,7 +36,7 @@ const ProductDetails = () => {
               <p className="lead">{productDetails.category}</p>
               <div className="d-grid gap-2 d-md-flex justify-content-md-start">
                 <Link
-                  to="/"
+                  onClick={()=>{window.history.back()}}
                   type="button"
                   className="mt-5 btn btn-dark btn-lg px-4 me-md-2"
                 >
