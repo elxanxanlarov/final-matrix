@@ -80,6 +80,14 @@
     .best-bottom .head .btn{
     margin-top: 2rem;
     }
+    .best .best-top .best-head h3{
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    .best .best-top .best-head p{
+        font-size: 1.1rem;
+        width: 100%;
+    }
     .best .best-top .best-head >div{
         flex-direction: column;
     }   
@@ -89,4 +97,16 @@
     .best .best-bottom .body .box{
         margin-top: .5rem;
     }
+    .best-bottom .head .time {
+        gap: 1rem;
+        
+    }
+}
+
+@media (max-width:"350px") {
+    .best-bottom .head .time {
+        gap: .5rem;
+        
+    }
+
 }

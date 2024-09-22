@@ -28,6 +28,7 @@ const Counter = () => {
       <div className="counter">
         <div className="my-container">
           <div className="dp-between">
+            {/* İlk iki kutu */}
             <div className="dp-between">
               <div className="box">
                 <p>
@@ -66,6 +67,8 @@ const Counter = () => {
                 <span>{t("home.hero.counter.registeredAttendees")}</span>
               </div>
             </div>
+
+            {/* İkinci iki kutu */}
             <div className="dp-between">
               <div className="box">
                 <p>

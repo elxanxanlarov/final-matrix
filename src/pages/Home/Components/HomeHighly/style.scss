@@ -84,6 +84,13 @@
     .highly{
         padding-bottom: 0;
     }
+    .highly .highly-top .highly-head h3 {
+        font-size: 3rem;
+    }
+    .highly .highly-top .highly-head p {
+        width: 100%;
+        font-size: 1.2rem;
+    }
     .highly .highly-top .highly-head >div{
         flex-direction: column;
     }
