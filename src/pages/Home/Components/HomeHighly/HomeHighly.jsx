@@ -23,9 +23,9 @@ const HomeHighly = () => {
               <p data-aos="fade-right">
                 {t("home.hero.homeHighly.description")}
               </p>
-              <button data-aos="fade-left" className="btn btn-light">
+              <Link to="/shop" data-aos="fade-left" className="btn btn-light link">
                 {t("home.hero.homeHighly.viewAll")}
-              </button>
+              </Link>
             </div>
           </div>
           <div className="highly-body row g-5 mt-4">

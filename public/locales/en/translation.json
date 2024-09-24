@@ -228,6 +228,16 @@
     "message": "Message:",
     "send": "Send Now"
   },
+  "checkout": {
+  "title": "Complete Your Order",
+  "description": "Review your products and proceed to payment.",
+  "cardNumber": "Card Number",
+  "cardholderName": "Cardholder Name",
+  "expiryDate": "Expiry Date (MM/YY)",
+  "cvc": "CVC",
+  "submit": "Submit",
+  "subtotal": "Subtotal"
+},
   "footer": {
     "quickLinks1": "Quick Links",
     "search": "Search",

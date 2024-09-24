@@ -1,0 +1,35 @@
+
+.register{
+    height: 100vh;
+    padding: 6rem 14rem;
+    
+}
+.register h1{
+    transition: .5s;
+}
+.register h1.register-close{
+    transform: translate(-110%);
+    }
+.register >div{
+    border: 1px solid;
+    height: 100%;
+    background-color:antiquewhite;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+.register >div .form-con{
+    padding: 4rem 5rem;
+}
+.register .right{
+    background-image: url(./image/undraw_mobile_login_re_9ntv.svg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 5.7rem;
+    transition: .5s;
+}
+
+
+.register .right.register-close{
+transform: translate(-110%);
+}

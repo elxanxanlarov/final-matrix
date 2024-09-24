@@ -16,6 +16,7 @@ const Basket = () => {
       index === self.findIndex((p) => p.id === product.id)
   );
 
+  
   const deleteProduct = (id) => {
     const updatedCart = addToCart.filter((product) => product.id !== id);
     setAddToCart(updatedCart);

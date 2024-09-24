@@ -143,7 +143,7 @@ const HomeHero = () => {
                 <div className="text-con">
                   <span>{t("home.hero.herobottom.box-1.subtitle")}</span>
                   <h3>{t("home.hero.herobottom.box-1.title")}</h3>
-                  <Link className="link">
+                  <Link to="/shop" className="link">
                     {t("home.hero.herobottom.box-1.cta")}
                   </Link>
                 </div>
@@ -154,7 +154,7 @@ const HomeHero = () => {
                 <div className="text-con">
                   <span>{t("home.hero.herobottom.box-2.subtitle")}</span>
                   <h3>{t("home.hero.herobottom.box-2.title")}</h3>
-                  <Link className="link">
+                  <Link to="/shop" className="link">
                     {t("home.hero.herobottom.box-2.cta")}
                   </Link>
                 </div>
@@ -165,7 +165,7 @@ const HomeHero = () => {
                 <div className="text-con">
                   <span>{t("home.hero.herobottom.box-3.subtitle")}</span>
                   <h3>{t("home.hero.herobottom.box-3.title")}</h3>
-                  <Link className="link">
+                  <Link to="/shop" className="link">
                     {t("home.hero.herobottom.box-3.cta")}
                   </Link>
                 </div>

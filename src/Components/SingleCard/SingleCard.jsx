@@ -5,15 +5,20 @@ import { CiHeart } from "react-icons/ci";
 import { useContext, useEffect, useState } from "react";
 import { MyContext } from "../../context/WishlistContext";
 import { AddtoCartContext } from "../../context/AddToCartContext";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom"; 
 import slugify from "slugify";
+import swal from "sweetalert"; 
 import { toast } from "react-toastify";
 
 const SingleCard = ({ product }) => {
   const [wishlist, setWishlist] = useContext(MyContext);
   const [addToCart, setAddToCart] = useContext(AddtoCartContext);
   const [isClicked, setIsClicked] = useState(false);
+  const navigate = useNavigate(); 
   const prodcutTitle = product.title?.slice(0, 12) + (product.title.length > 20 ? "..." : "");
+
+  const currentUser = JSON.parse(localStorage.getItem("currentUser")); 
+
   useEffect(() => {
     localStorage.setItem("wishlist", JSON.stringify(wishlist));
     localStorage.setItem("addtocart", JSON.stringify(addToCart));
@@ -21,14 +26,24 @@ const SingleCard = ({ product }) => {
 
   const isInWishlist = wishlist.some((item) => item.id === product.id);
 
+  
   const toggleAddToCart = () => {
-    setAddToCart((prevAddToCart) => [...prevAddToCart, product]);
-    setIsClicked(true);
-    toast.success("Product added to cart");
+    if (!currentUser || !currentUser.email) {
+      
+      swal("You need to login!", "Please login to add products to your cart.", "warning").then(() => {
+        navigate("/login"); 
+      });
+    } else {
+      
+      setAddToCart((prevAddToCart) => [...prevAddToCart, product]);
+      setIsClicked(true);
+      toast.success("Product added to cart");
 
-    setTimeout(() => setIsClicked(false), 200);
+      setTimeout(() => setIsClicked(false), 200);
+    }
   };
 
+  
   const toggleWishlist = () => {
     if (isInWishlist) {
       setWishlist((prevWishlist) => prevWishlist.filter((item) => item.id !== product.id));
@@ -39,7 +54,7 @@ const SingleCard = ({ product }) => {
     }
   };
 
-  const titleSlug = typeof product.title === 'string' ? slugify(product.title) : '';
+  const titleSlug = typeof product.title === "string" ? slugify(product.title) : "";
 
   return (
     <div
@@ -53,7 +68,7 @@ const SingleCard = ({ product }) => {
             <img src={product.img} alt={product.title} />
             <div className="icons dp-cloumn">
               <div
-                className={`icon-container ${isClicked ? 'clicked' : ''}`}
+                className={`icon-container ${isClicked ? "clicked" : ""}`}
                 onClick={toggleAddToCart}
               >
                 <FaCartPlus />
@@ -62,7 +77,7 @@ const SingleCard = ({ product }) => {
                 <IoEyeOutline />
               </Link>
               <div
-                className={`icon-container ${isInWishlist ? 'clicked' : ''}`}
+                className={`icon-container ${isInWishlist ? "clicked" : ""}`}
                 onClick={toggleWishlist}
               >
                 {isInWishlist ? <FaHeart /> : <CiHeart />}
@@ -70,7 +85,9 @@ const SingleCard = ({ product }) => {
             </div>
           </div>
           <div className="text-con">
-            <Link to={`/products/${titleSlug}`} className="link"><h4>{prodcutTitle}</h4></Link>
+            <Link to={`/products/${titleSlug}`} className="link">
+              <h4>{prodcutTitle}</h4>
+            </Link>
             <p>From ${product.price}</p>
           </div>
         </div>

@@ -228,6 +228,16 @@
     "message": "Mesaj:",
     "send": "Göndər"
   },
+  "checkout": {
+  "title": "Sifarişi tamamla",
+  "description": "Məhsullarınızı yoxlayın və ödənişə keçin.",
+  "cardNumber": "Kart Nömrəsi",
+  "cardholderName": "Kart Sahibi",
+  "expiryDate": "Son İstifadə Tarixi (MM/YY)",
+  "cvc": "CVC",
+  "submit": "Göndər",
+  "subtotal": "Qiymət Cəmi"
+},
   "footer": {
     "quickLinks1": "Tez bağlantılar",
     "search": "Axtarış",

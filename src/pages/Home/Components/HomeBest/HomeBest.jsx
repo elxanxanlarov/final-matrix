@@ -33,7 +33,7 @@ const HomeBest = () => {
             <h3>{t("home.hero.homeBest.bestSellingTitle")}</h3>
             <div className="dp-between">
               <p>{t("home.hero.homeBest.description")}</p>
-              <Link className="btn btn-light">
+              <Link to="/shop" className="btn btn-light">
                 {t("home.hero.homeBest.viewAll")}
               </Link>
             </div>

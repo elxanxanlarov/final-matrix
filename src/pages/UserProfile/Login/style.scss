@@ -1,0 +1,68 @@
+
+.login{
+    height: 100vh;
+    padding: 6rem 14rem;
+    
+    
+}
+.login h1{
+    transition: .5s;
+}
+.login h1.login-close{
+    transform: translate(-110%);
+    }
+.login >div{
+    border: 1px solid;
+    height: 100%;
+    background-color:antiquewhite;
+    border-radius: 2rem;
+    overflow: hidden;
+    background-image: url(./image/undraw_safe_re_kiil.svg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.login >div .form-con{
+    padding: 4rem 5rem;
+}
+.login .right{
+    // background-color: black;
+
+    transition: .5s;
+}
+
+
+.login .right.login-close{
+transform: translate(110%);
+}
+
+@media screen and (max-width: 700px){
+    .login >div .form-con{
+        padding: 0;
+    }
+    .login{
+        height: 100vh;
+        padding: 6rem 8rem;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    .login >div .form-con{
+        padding: 0;
+    }
+    .login{
+        height: 100vh;
+        padding: 6rem 4rem;
+    }
+}
+
+@media screen and (max-width: 333px){
+    .login >div .form-con{
+        padding: 0;
+    }
+    .login{
+        height: 100vh;
+        padding: 6rem 2rem;
+    }
+}

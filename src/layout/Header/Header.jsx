@@ -64,7 +64,7 @@ const Header = () => {
   const adminItems = [
     {
       key: "1",
-      label: <Link to="/admin">Admin</Link>,
+      label: <Link to="/dashboard">Admin</Link>,
     },
     {
       key: "2",

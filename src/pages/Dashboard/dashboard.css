@@ -1,0 +1,21 @@
+.dashboard {
+background-color:var(--white);
+}
+.dashboard .table{
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+}
+.dashboard .md-none {
+    display: none;
+}
+
+@media screen and (max-width: 600px){
+    .rp-none {
+        display: none;
+    }
+
+    .dashboard .md-none {
+        display: flex;
+    }
+ 
+}
