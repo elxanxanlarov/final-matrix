@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import { useTranslation } from "react-i18next"; // Tərcümə üçün
+import { useTranslation } from "react-i18next";
 import "./style.scss";
 import SingleCard from "../../Components/SingleCard/SingleCard";
 import { useSelector } from "react-redux";
 
 const Shop = () => {
-  const { t } = useTranslation(); // Tərcümə hook-u
+  const { t } = useTranslation();
   const productData = useSelector((state) => state.product);
   const langProduct = productData.filter(
     (item) => item.lang == t("productLang")
@@ -16,6 +16,9 @@ const Shop = () => {
   const [categoryItem, setCategoryItem] = useState(
     localStorage.getItem("category") || t("shop.category.all")
   );
+  useEffect(() => {
+    setCategoryItem(t("productLang") == "en" ? "All" : "Hamısı");
+  }, []);
   useEffect(() => {
     if (selectedItem) {
       localStorage.setItem("productSort", selectedItem);

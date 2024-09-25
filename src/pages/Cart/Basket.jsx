@@ -56,11 +56,12 @@ const Basket = () => {
    <div className="cart-page">
      <div className="my-container">
        {uniqueProducts.length === 0 ? (
-         <div className="d-flex align-items-center justify-content-center">
+         <div className="cart-empty-img dp-center">
            <img
-             src="https://mcivils.ir/wp-content/themes/megawp/img/cart-empty.gif"
+             src="https://cdn-icons-png.flaticon.com/512/11329/11329060.png"
              alt=""
            />
+           <Link to="/" className="btn btn-dark">Go Home</Link>
          </div>
        ) : (
          <div >
@@ -159,7 +160,6 @@ const Basket = () => {
                  </p>
                </div>
                <div className="btn-con">
-                 {/* <div className="btn btn-danger">Clear All</div> */}
                  <Link to="/checkout" className="btn btn-dark ms-3">Check Out</Link>
                </div>
              </div>

@@ -1,4 +1,9 @@
 .wish-list .wish-head{
-    background-color:#F3F3F3;
+    background-color:var(--light-grey);
+    color:var(--black);
     padding: 4rem 0;
+}
+.wish-list{
+    background-color:var(--white);
+    color:var(--black);
 }

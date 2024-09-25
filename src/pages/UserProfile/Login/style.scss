@@ -1,12 +1,14 @@
 
 .login{
     height: 100vh;
-    padding: 6rem 14rem;
-    
-    
+    padding: 6rem 14rem;   
+    background-color:var(--white);
+    color:var(--black);
 }
 .login h1{
     transition: .5s;
+    font-weight: 700 !important;
+    color:black;
 }
 .login h1.login-close{
     transform: translate(-110%);
@@ -26,8 +28,6 @@
     padding: 4rem 5rem;
 }
 .login .right{
-    // background-color: black;
-
     transition: .5s;
 }
 
@@ -35,10 +35,46 @@
 .login .right.login-close{
 transform: translate(110%);
 }
+.my-password{
+    position: relative;
+}
+.my-password .eye-icon{
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.2rem;
+    color:var(--black);
+}
+.login >div .form-con input{
+    background-color:var(--white);
+    color:var(--black) !important;
+}
+.login >div label{
+    color:var(--black);
+}
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 1260px){
+  
+    .login{
+        height: 120vh;
+        padding: 6rem 2rem;
+    }
+    .login >div{
+        height: 70%;
+    }
+    .login >div .form-con{
+        padding: 2rem 2rem;
+    }
+   
+}
+@media screen and (max-width: 800px){
     .login >div .form-con{
         padding: 0;
+    }
+    .login >div{
+        height: 100%;
     }
     .login{
         height: 100vh;
@@ -47,7 +83,7 @@ transform: translate(110%);
 }
 
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 560px){
     .login >div .form-con{
         padding: 0;
     }

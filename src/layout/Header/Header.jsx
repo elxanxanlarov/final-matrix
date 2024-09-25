@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useContext, useEffect, useState } from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import { FaRegHeart, FaRegMoon, FaRegSun, FaRegUser } from "react-icons/fa";
-import { IoCartOutline, IoSearch } from "react-icons/io5";
+import { IoCartOutline, IoReturnDownBack, IoSearch } from "react-icons/io5";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./style.scss";
 import LanguageSwitcer from "../../i18n/LanguageSwitcer";
@@ -12,8 +12,21 @@ import { AddtoCartContext } from "../../context/AddToCartContext";
 import { Button, Dropdown } from "antd";
 import { useSelector } from "react-redux";
 import slugify from "slugify";
-
+const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+const savedUserData = JSON.parse(localStorage.getItem("userData") || "[]");
+const currentUserData = savedUserData.find(
+  (item) => item.email === currentUser?.email
+);
+const capitalizeFirstLetter = (string) =>
+  string.charAt(0).toUpperCase() + string.slice(1);
 const Header = () => {
+  useEffect(() => {
+    const userName = currentUserData
+      ? capitalizeFirstLetter(currentUserData.username.split(" ")[0])
+      : "";
+    setUserNameState(userName);
+  }, []);
+  const [userNameState, setUserNameState] = useState("");
   const location = useLocation();
   const navigate = useNavigate();
   const { t } = useTranslation();
@@ -26,26 +39,19 @@ const Header = () => {
   const currentUser = localStorage.getItem("currentUser");
   const user = currentUser ? JSON.parse(currentUser) : null;
   const isAdmin = user && user.isAdmin;
-
   const productData = useSelector((state) => state.product);
   const langProduct = productData.filter(
     (item) => item.lang == t("productLang")
   );
   const [keyword, setKeyword] = useState("");
   const guestItems = [
-    {
-      key: "1",
-      label: <Link to="/login">Login</Link>,
-    },
-    {
-      key: "2",
-      label: <Link to="/register">Register</Link>,
-    },
+    { key: "1", label: <Link to="/login">Login</Link> },
+    { key: "2", label: <Link to="/register">Register</Link> },
   ];
   const userItems = [
     {
       key: "1",
-      label: <Link to="/profile">Profile</Link>,
+      label: <Link to="/">{currentUser ? `Hi ${userNameState}` : "User"}</Link>,
     },
     {
       key: "2",
@@ -114,7 +120,7 @@ const Header = () => {
   const menuBtnCLick = () => {
     setMenuClickBtn((prevState) => !prevState);
     document.body.classList.add("menu-active");
-  };  
+  };
   return (
     <>
       <Navbar className="navbar">
@@ -330,14 +336,25 @@ const Header = () => {
                 </button>
               </div>
               <ul className="list-group">
-                {!keyword ? null : langProduct.filter(p => p.title.toLowerCase().includes(keyword.toLowerCase())).map(item => (
-                  <div  key={item.id}  data-bs-dismiss="modal">
-                    <li className="list-group-item">
-                      <img width={70} src={item.img} alt={item.title} />
-                      <Link to={`/products/${slugify(item.title)}`} className='ms-3'>{item.title}</Link>
-                    </li>
-                  </div>
-                ))}
+                {!keyword
+                  ? null
+                  : langProduct
+                      .filter((p) =>
+                        p.title.toLowerCase().includes(keyword.toLowerCase())
+                      )
+                      .map((item) => (
+                        <div key={item.id} data-bs-dismiss="modal">
+                          <li className="list-group-item">
+                            <img width={70} src={item.img} alt={item.title} />
+                            <Link
+                              to={`/products/${slugify(item.title)}`}
+                              className="ms-3"
+                            >
+                              {item.title}
+                            </Link>
+                          </li>
+                        </div>
+                      ))}
               </ul>
             </div>
           </div>

@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import "./style.scss";
 import { useState } from "react";
-
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 const adminData = {
   adminEmail: "admin@gmail.com",
   adminPassword: "admin1234",
@@ -11,6 +11,7 @@ const adminData = {
 
 const Login = () => {
   const [loginClose, setLoginClose] = useState(false);
+  const [showPassowrd,setShowPassowrd]=useState(true)
   const { register, handleSubmit, formState: { errors } } = useForm();
   const navigate = useNavigate();
 
@@ -36,15 +37,15 @@ const Login = () => {
     if (user || isAdmin) {
       localStorage.setItem(
         "currentUser",
-        JSON.stringify({ email: data.email, isAdmin })
+        JSON.stringify({ email: data.email, isAdmin,name:"salam" })
       );
 
       if (isAdmin) {
         console.log("Navigating to admin page");
         navigate("/dashboard");
       } else {
+        swal("You have successfully logged in!", "", "success");
         navigate("/");
-        
       }
     } else {
       console.log("nor");
@@ -82,15 +83,16 @@ const Login = () => {
                 animate={{ opacity: loginClose ? 0 : 1, y: loginClose ? -20 : 0 }}
                 transition={{ duration: 0.5, delay: 0.1 }}
               >
-                <div className="form-floating my-2">
+                <div className="form-floating my-password my-2">
                   <input
-                    type="password"
+                    type={showPassowrd?"text":"password"}
                     className="form-control"
                     id="floatingPassword"
                     placeholder="Password"
                     {...register("password", { required: true })}
                     autoComplete="current-password"
                   />
+                  <div onClick={()=>setShowPassowrd(showPassowrd?false:true)} className="eye-icon">{showPassowrd? <FaEyeSlash />:<FaEye />}</div>
                   <label htmlFor="floatingPassword">Password</label>
                   {errors.password && <span>Password is required</span>}
                 </div>

@@ -24,6 +24,18 @@ body.dark .table td {
 .total span{
     font-weight: 600;
 }
+.cart-empty-img {
+    flex-direction: column;
+    padding-bottom: 3rem;
+}
+.cart-empty-img>.btn{
+    font-size: 1.4rem;
+}
+.cart-empty-img img{
+    height: 30rem;
+    object-fit: contain;
+    
+}
 .btns-con{
     border:1px solid #d5cccc;
     width: 6rem;
