@@ -12,15 +12,16 @@ import { AddtoCartContext } from "../../context/AddToCartContext";
 import { Button, Dropdown } from "antd";
 import { useSelector } from "react-redux";
 import slugify from "slugify";
-const currentUser = JSON.parse(localStorage.getItem("currentUser"));
-const savedUserData = JSON.parse(localStorage.getItem("userData") || "[]");
-const currentUserData = savedUserData.find(
-  (item) => item.email === currentUser?.email
-);
+
 const capitalizeFirstLetter = (string) =>
   string.charAt(0).toUpperCase() + string.slice(1);
 const Header = () => {
   useEffect(() => {
+    const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+    const savedUserData = JSON.parse(localStorage.getItem("userData") || "[]");
+    const currentUserData = savedUserData.find(
+      (item) => item.email === currentUser?.email
+    );
     const userName = currentUserData
       ? capitalizeFirstLetter(currentUserData.username.split(" ")[0])
       : "";
@@ -51,7 +52,11 @@ const Header = () => {
   const userItems = [
     {
       key: "1",
-      label: <Link to="/">{currentUser ? `Hi ${userNameState}` : "User"}</Link>,
+      label: (
+        <Link to="/">
+          {userNameState ? `Hi ${userNameState}` : "Loading..."}
+        </Link>
+      ),
     },
     {
       key: "2",
@@ -116,7 +121,6 @@ const Header = () => {
     }
     return guestItems;
   };
-
   const menuBtnCLick = () => {
     setMenuClickBtn((prevState) => !prevState);
     document.body.classList.add("menu-active");
@@ -145,26 +149,28 @@ const Header = () => {
                   {t("header.shop")}
                 </Link>
               </li>
-              <div className="dropdown p-0 m-0">
-                <span
-                  className="text-white dropdown-toggle cursor"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  {t("header.pages")}
-                </span>
-                <ul className="dropdown-menu">
-                  <li>
-                    <Link to="/about" className="dropdown-item">
-                      About Us
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/faq" className="dropdown-item">
-                      FAQ
-                    </Link>
-                  </li>
-                </ul>
+              <div className="my">
+                <div className="dropdown p-0 m-0">
+                  <span
+                    className="text-white dropdown-toggle cursor"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    {t("header.pages")}
+                  </span>
+                  <ul className="dropdown-menu">
+                    <li>
+                      <Link to="/about" className="dropdown-item">
+                        {t("header.about")}
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/faq" className="dropdown-item">
+                        FAQ
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </div>
               <li>
                 <Link to="/contact" className="link">
@@ -181,15 +187,18 @@ const Header = () => {
               </Link>
             </div>
             <div className="right dp-align gap-2">
-              <button
-                type="button"
-                className="btn btn-light ms-3"
-                data-bs-toggle="modal"
-                data-bs-target="#searchModal"
-              >
-                <IoSearch />
-              </button>
-              <LanguageSwitcer />
+              <Link to="/wishlist" className="heart cursor">
+                <p className="dp-center count">
+                  <span>{wishlist.length}</span>
+                </p>
+                <FaRegHeart />
+              </Link>
+              <Link to="/addtocart" className="basket cursor">
+                <p className="dp-center count">
+                  <span>{addToCart.length}</span>
+                </p>
+                <IoCartOutline />
+              </Link>
               <motion.div
                 onClick={() => setModeBtn((prevMode) => !prevMode)}
                 className="dark dark-btn"
@@ -203,18 +212,15 @@ const Header = () => {
                   {modeBtn ? <FaRegSun /> : <FaRegMoon />}
                 </button>
               </motion.div>
-              <Link to="/wishlist" className="heart cursor">
-                <p className="dp-center count">
-                  <span>{wishlist.length}</span>
-                </p>
-                <FaRegHeart />
-              </Link>
-              <Link to="/addtocart" className="basket cursor">
-                <p className="dp-center count">
-                  <span>{addToCart.length}</span>
-                </p>
-                <IoCartOutline />
-              </Link>
+              <button
+                type="button"
+                className="btn btn-light my-search dp-center"
+                data-bs-toggle="modal"
+                data-bs-target="#searchModal"
+              >
+                <IoSearch />
+              </button>
+              <LanguageSwitcer dp="md" />
               <Dropdown
                 menu={{ items: DropdownMenu() }}
                 onClick={handleMenuClick}
@@ -257,35 +263,38 @@ const Header = () => {
                   {t("header.shop")}
                 </Link>
               </li>
-              <div className="dropdown p-0 m-0">
-                <span
-                  className="text-white dropdown-toggle cursor"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  {t("header.pages")}
-                </span>
-                <ul className="dropdown-menu">
-                  <li>
-                    <Link
-                      to="/about"
-                      className="dropdown-item"
-                      onClick={() => setMenuClickBtn(false)}
-                    >
-                      About Us
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/faq"
-                      className="dropdown-item"
-                      onClick={() => setMenuClickBtn(false)}
-                    >
-                      FAQ
-                    </Link>
-                  </li>
-                </ul>
+              <div className="rp-dropdowm">
+                <div className="dropdown p-0 m-0">
+                  <span
+                    className="text-white dropdown-toggle cursor"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    {t("header.pages")}
+                  </span>
+                  <ul className="dropdown-menu">
+                    <li>
+                      <Link
+                        to="/about"
+                        className="dropdown-item"
+                        onClick={() => setMenuClickBtn(false)}
+                      >
+                        About Us
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/faq"
+                        className="dropdown-item"
+                        onClick={() => setMenuClickBtn(false)}
+                      >
+                        FAQ
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </div>
+
               <li>
                 <Link
                   to="/contact"
@@ -296,6 +305,17 @@ const Header = () => {
                 </Link>
               </li>
             </ul>
+            <div className="my-btns-con dp-align gap-2">
+              <button
+                onClick={() => {
+                  setModeBtn((prevMode) => !prevMode);
+                }}
+                className="btn btn-dark mode-btn"
+              >
+                {modeBtn ? <FaRegSun /> : <FaRegMoon />}
+              </button>
+              <LanguageSwitcer dp="rp"/>
+            </div>
           </div>
         </div>
       </Navbar>

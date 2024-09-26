@@ -20,6 +20,7 @@
     background-color:var(--white);
     color:var(--black);
     border:1px solid var(--black);
+    padding-top: .2rem;
 }
 
 .best .best-bottom .body .box{
@@ -35,7 +36,6 @@
 }
 .best .best-bottom .body .box:hover{
     background-size: 29rem;
-
 }
 .best .best-bottom .body .box-one{
     background-image:url("./image/bottom-1.webp");
