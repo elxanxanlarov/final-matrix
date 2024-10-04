@@ -187,12 +187,14 @@ const Header = () => {
               </Link>
             </div>
             <div className="right dp-align gap-2">
-              <Link to="/wishlist" className="heart cursor">
-                <p className="dp-center count">
-                  <span>{wishlist.length}</span>
-                </p>
-                <FaRegHeart />
-              </Link>
+              <div className="md">
+                <Link to="/wishlist" className="heart cursor">
+                  <p className="dp-center count">
+                    <span>{wishlist.length}</span>
+                  </p>
+                  <FaRegHeart />
+                </Link>
+              </div>
               <Link to="/addtocart" className="basket cursor">
                 <p className="dp-center count">
                   <span>{addToCart.length}</span>
@@ -314,7 +316,13 @@ const Header = () => {
               >
                 {modeBtn ? <FaRegSun /> : <FaRegMoon />}
               </button>
-              <LanguageSwitcer dp="rp"/>
+              <LanguageSwitcer dp="rp" />
+              <Link to="/wishlist" className="heart cursor">
+                  <p className="dp-center count">
+                    <span>{wishlist.length}</span>
+                  </p>
+                  <FaRegHeart />
+                </Link>
             </div>
           </div>
         </div>

@@ -113,6 +113,13 @@
         "discount": "65% Off"
       },
       "buyNow": "Buy Now"
+    },
+    "timer": {
+      "getUpTo": "GET UP TO 65% OFF",
+      "productName": "Pexoli Air Fryer",
+      "price": "$462.00",
+      "description": "Electronics products continue to drive innovation and shape the way we live, work, and interact with our environment.",
+      "shopNow": "Shop Now"
     }
   },
   "shop": {

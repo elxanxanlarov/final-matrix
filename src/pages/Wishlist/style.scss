@@ -7,3 +7,25 @@
     background-color:var(--white);
     color:var(--black);
 }
+.wish-empty {
+    height: 60vh;
+    background-image: url(https://bernardjewelers.com/assets/images/empty-wishlist.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:30rem;
+}
+.wish-empty >div:first-child{
+    text-align: center;
+    padding-top:2rem ;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    margin: 2rem 0;
+}
+.wish-empty >div:last-child{
+    height: 100%;
+}
+.wish-empty >div h3{
+    font-size: 2.5rem;
+}

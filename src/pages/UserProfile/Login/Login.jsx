@@ -11,7 +11,7 @@ const adminData = {
 
 const Login = () => {
   const [loginClose, setLoginClose] = useState(false);
-  const [showPassowrd,setShowPassowrd]=useState(true)
+  const [showPassowrd,setShowPassowrd]=useState(false)
   const { register, handleSubmit, formState: { errors } } = useForm();
   const navigate = useNavigate();
 
@@ -111,9 +111,7 @@ const Login = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
               >
-                <Link onClick={(e) => closeLoginFunc(e)}>
-                  <p>Register</p>
-                </Link>
+                <p className="my-3">You don't have an account.<Link className="mx-2" onClick={(e) => closeLoginFunc(e)}>Register</Link></p>
               </motion.div>
             </form>
           </div>

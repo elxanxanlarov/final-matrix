@@ -1,0 +1,44 @@
+.timer .timer-con{
+    display: flex;
+    align-items: center;
+}
+.timer .timer-con .left img{
+    border-radius: 2rem;
+}
+.timer .timer-con .right{
+    height: 100%;
+    display: flex;
+    align-items:center;
+    text-align: center;
+}
+.timer .timer-con .right>div *{
+    margin: .7rem 0;
+}
+.timer .timer-con .right>div span:first-child{
+    color:#B4976C;
+    font-weight: 600;
+}
+.timer .timer-con .right>div h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.timer .timer-con .right>div .price{
+    color:#B4976C;
+    font-weight: 700;
+}
+.timer .timer-con .right>div p{
+    font-size: 1.2rem;
+}
+.timer .timer-con .right>div .time {
+    gap: 1rem;
+}
+.timer .timer-con .right>div .time .dots{
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0 ;
+    margin-bottom: 1rem;
+}
+.timer .timer-con .right>div .time p{
+    font-size: 3.5rem;
+    font-weight: 600;
+}

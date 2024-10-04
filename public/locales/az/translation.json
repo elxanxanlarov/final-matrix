@@ -113,7 +113,15 @@
         "discount": "65% endirim"
       },
       "buyNow": "İndi Al"
+    },
+    "timer": {
+      "getUpTo": "65%-ə qədər endirim əldə edin",
+      "productName": "Pexoli Air Fryer",
+      "price": "$462.00",
+      "description": "Elektronika məhsulları innovasiyanı davam etdirir və bizim həyat tərzimizi, iş rejimimizi və ətraf mühitlə əlaqəmizi formalaşdırır.",
+      "shopNow": "İndi Alın"
     }
+
   }, 
     "shop": {
       "title": "Mağaza",

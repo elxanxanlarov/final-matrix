@@ -25,7 +25,9 @@ const Check = () => {
 
   const calculateSubtotal = () => {
     return uniqueProducts.reduce((total, product) => {
-      const productQuantity = addToCart.filter((p) => p.id === product.id).length;
+      const productQuantity = addToCart.filter(
+        (p) => p.id === product.id
+      ).length;
       const productTotal = product.price * productQuantity;
       return total + productTotal;
     }, 0);
@@ -52,13 +54,11 @@ const Check = () => {
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
-    swal(t("checkout.title"), t("checkout.description"), "success").then(
-      () => {
-        setAddToCart([]);
-        localStorage.removeItem("addtocart");
-        navigate("/");
-      }
-    );
+    swal(t("checkout.title"), t("checkout.description"), "success").then(() => {
+      setAddToCart([]);
+      localStorage.removeItem("addtocart");
+      navigate("/checkout-result");
+    });
   };
 
   return (
@@ -132,7 +132,32 @@ const Check = () => {
           <div className="total">
             <div>
               <p>
-                <span>{t("checkout.subtotal")}:</span> ${calculateSubtotal()}
+                <span className="subtotal">{t("checkout.subtotal")}:</span>{" "}
+                <span>${calculateSubtotal()}</span>
+                <div className="product">
+                  {uniqueProducts.map((item, index) => (
+                    <div key={index} className="w-100">
+                      <div className="w-100">
+                        <div className="dp-align gap-2 product w-100">
+                          <img
+                            src={item.img}
+                            style={{ width: "120px" }}
+                            alt=""
+                          />
+                          <div className="dp-between w-100">
+                            <div>
+                              <p>{item.title}</p>
+                              <p>{item.category}</p>
+                            </div>
+                            <div>
+                              <p className="price">${item.price}</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </p>
             </div>
           </div>

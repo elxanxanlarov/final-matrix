@@ -22,6 +22,7 @@ import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import Contact from "./pages/Contact/Contact";
 import FaqPage from "./pages/Faq/FaqPage";
 import Check from "./pages/CheckOut/Check";
+import ResultCheck from "./pages/ResultCheck/ResultCheck";
 
 const App = () => {
   return (
@@ -38,6 +39,7 @@ const App = () => {
           <Route path="/wishlist" element={<Wishlist />} />
           <Route path="/addtocart" element={<Basket />} />
           <Route path="/checkout" element={<Check />} />
+          <Route path="/checkout-result" element={<ResultCheck />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           

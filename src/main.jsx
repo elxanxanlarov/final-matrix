@@ -12,7 +12,10 @@ import { WishListProvider } from "./context/WishlistContext.jsx";
 import store from "./tools/store/index.js";
 import { callProduct } from "./config/defaultFunc.js";
 import { AddtoCartProvider } from "./context/AddToCartContext.jsx";
-AOS.init();
+AOS.init({
+  duration: 1500, 
+  once: true, 
+});
 
 callProduct();
 ReactDOM.createRoot(document.getElementById("root")).render(

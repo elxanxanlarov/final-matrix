@@ -98,10 +98,34 @@
     text-align: left;
   }
   
-  .total{
+  .check-page .total .subtotal{
+    font-size: 2rem;
+    
+  }
+  .check-page .total .subtotal+span{
+    font-size: 1.5rem;
+    color:var(--black);
+  }
+  .check-page .total .product{
+    padding: .5rem;
+    margin: .5rem 0;
+    height: 100%;
+    overflow: auto;
+  }
+  .check-page .total .product>div{
+    background-color:var(--white);
+    border-radius:2rem;
+    padding: .5rem ;
+    margin: .5rem 0;
+  }
+  .check-page .total .product .price{
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .check-page .total{
     background-color:var(--light-grey);
     height: 100%;
-    padding: 2rem 0 !important;
+
   }
 
 

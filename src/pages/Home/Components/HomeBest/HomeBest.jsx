@@ -6,24 +6,12 @@ import { useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
 
 const HomeBest = () => {
-  const { t } = useTranslation(); // Hook for translation
-  const [currentTime, setCurrentTime] = useState(new Date());
+  const { t } = useTranslation(); 
   const productData = useSelector((state) => state.product);
   const langProduct = productData.filter(
     (item) => item.lang == t("productLang")
   );
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setCurrentTime(new Date());
-    }, 1000);
 
-    return () => clearInterval(intervalId);
-  }, []);
-
-  const day = currentTime.getDate();
-  const hour = currentTime.getHours();
-  const minute = currentTime.getMinutes();
-  const second = currentTime.getSeconds();
 
   return (
     <div className="best pt-5">
@@ -45,32 +33,6 @@ const HomeBest = () => {
           </div>
         </div>
         <div className="best-bottom">
-          <div className="head dp-between">
-            <div className="time dp-align text-center">
-              <div>
-                <p>{day}</p>
-                <span>{t("home.hero.homeBest.time.days")}</span>
-              </div>
-              <span className="dots">:</span>
-              <div>
-                <p>{hour}</p>
-                <span>{t("home.hero.homeBest.time.hours")}</span>
-              </div>
-              <span className="dots">:</span>
-              <div>
-                <p>{minute}</p>
-                <span>{t("home.hero.homeBest.time.minutes")}</span>
-              </div>
-              <span className="dots">:</span>
-              <div>
-                <p>{second}</p>
-                <span>{t("home.hero.homeBest.time.seconds")}</span>
-              </div>
-            </div>
-            <Link to="/shop" className="btn btn-light">
-              {t("home.hero.homeBest.buyNow")}
-            </Link>
-          </div>
           <div className="body row">
             <div className="col-md-4 col-sm-12 col-12">
               <div className="box box-one dp-align">

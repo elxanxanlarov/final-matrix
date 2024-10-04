@@ -10,6 +10,7 @@ const testimonialsEN = [
     text: "This smart home assistant has become a very important part of my daily routine. From managing my schedule and setting reminders to controlling smart home devices and answering questions.",
     name: "Willie Bradley",
     position: "Reporter",
+    img: "https://elexy-demo.myshopify.com/cdn/shop/files/avator-1.png?v=1719918585&width=46",
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ const testimonialsEN = [
     text: "The product quality is outstanding. It has transformed the way I interact with my smart devices and daily life.",
     name: "Lisa Decamp",
     position: "Investor, Zemlex Co.",
+    img: "https://elexy-demo.myshopify.com/cdn/shop/files/avator-2.png?v=1719918662&width=46",
   },
   {
     id: 3,
@@ -26,6 +28,7 @@ const testimonialsEN = [
     text: "The build quality is fantastic, and the performance is even better. I highly recommend this for anyone looking to upgrade their smart home setup.",
     name: "Cameron Williamson",
     position: "Banker, Simtom Bank Co.",
+    img: "https://elexy-demo.myshopify.com/cdn/shop/files/avator-3.png?v=1719918662&width=46",
   },
 ];
 const testimonialsAZ = [
@@ -36,6 +39,7 @@ const testimonialsAZ = [
     text: "Bu ağıllı ev asistenti gündəlik işlərimdə çox vacib rol oynamağa başladı. Cədvəlimi idarə etməkdən və xatırlatmalar qurmaqdan tutmuş, ağıllı ev cihazlarını idarə etməyə və suallarıma cavab verməyə qədər hər işimdə faydalıdır.",
     name: "Willie Bradley",
     position: "CEO Deplex Group",
+    img: "https://elexy-demo.myshopify.com/cdn/shop/files/avator-1.png?v=1719918585&width=46",
   },
   {
     id: 2,
@@ -44,6 +48,7 @@ const testimonialsAZ = [
     text: "Məhsulun keyfiyyəti əladır. Bu, gündəlik həyatımda ağıllı cihazlarla ünsiyyət tərzimi tamamilə dəyişdi.",
     name: "Lisa Decamp",
     position: "Investor, Zemlex Co.",
+    img: "https://elexy-demo.myshopify.com/cdn/shop/files/avator-2.png?v=1719918662&width=46",
   },
   {
     id: 3,
@@ -52,6 +57,7 @@ const testimonialsAZ = [
     text: "Tikinti keyfiyyəti mükəmməldir, performansı isə daha da yaxşıdır. Ağıllı ev sistemini təkmilləşdirmək istəyənlərə şiddətlə tövsiyə edirəm.",
     name: "Cameron Williamson",
     position: "Bank işçisi, Simtom Bank Co.",
+    img: "https://elexy-demo.myshopify.com/cdn/shop/files/avator-3.png?v=1719918662&width=46",
   },
 ];
 const Testimonial = () => {
@@ -112,9 +118,16 @@ const Testimonial = () => {
                           </div>
                           <span>{item.title}</span>
                           <p>{item.text}</p>
-                          <div className="client-info">
-                            <p>{item.name}</p>
-                            <span>{item.position}</span>
+                          <div className="client-info dp-align gap-2">
+                            <img
+                              style={{ width: "2rem" }}
+                              src={item.img}
+                              alt=""
+                            />
+                            <div>
+                              <p>{item.name}</p>
+                              <span>{item.position}</span>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -138,9 +151,16 @@ const Testimonial = () => {
                           </div>
                           <span>{item.title}</span>
                           <p>{item.text}</p>
-                          <div className="client-info">
-                            <p>{item.name}</p>
-                            <span>{item.position}</span>
+                          <div className="client-info dp-align gap-2">
+                            <img
+                              style={{ width: "2rem" }}
+                              src={item.img}
+                              alt=""
+                            />
+                            <div>
+                              <p>{item.name}</p>
+                              <span>{item.position}</span>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -163,15 +183,17 @@ const Testimonial = () => {
                             <FaStar />
                           </div>
                           <span>{item.title}</span>
-                          <p>
-                            “This smart home assistant has become very important
-                            part of my daily routine. From managing my schedule
-                            and setting reminders to controlling smart home
-                            devices and answering questions.”
-                          </p>
-                          <div className="client-info">
-                            <p>Brain Armstrong</p>
-                            <span>CEO Deplex Group</span>
+                          <p>{item.text}</p>
+                          <div className="client-info dp-align gap-2">
+                            <img
+                              style={{ width: "2rem" }}
+                              src={item.img}
+                              alt=""
+                            />
+                            <div>
+                              <p>{item.name}</p>
+                              <span>{item.position}</span>
+                            </div>
                           </div>
                         </div>
                       </div>

@@ -1,0 +1,53 @@
+.robotic{
+    background-image: url(https://elexy-demo.myshopify.com/cdn/shop/files/demo-4-banner-image.png?v=1720341388&width=2000);
+    height: 75vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.robotic .robotic-con{
+    display: flex;
+    justify-content: end;
+    height: 100%;
+    padding: 1rem 0;
+}
+.robotic .robotic-con .text-con{
+    backdrop-filter: blur(7px);
+    width: 50%;
+    height: 100%;
+    border-radius: 2rem;
+    padding: 2rem 1.5rem;
+}
+.robotic .robotic-con .text-con h3{
+    font-size: 2.6rem;
+    font-weight: 700;
+}    
+.robotic .robotic-con .text-con p{
+    margin: 1rem 0;
+}
+.robotic .robotic-con .text-con ul li{
+    margin: 1rem 0;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.robotic .robotic-con .text-con .btn{
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+@media screen and (max-width: 1260px) {
+    .robotic .robotic-con .text-con{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 780px) {
+    .robotic{
+        height: auto;
+    }
+    .robotic .robotic-con .text-con>div{
+        flex-direction: column;
+        align-items: start;
+    }
+    .robotic .robotic-con .text-con{
+        width: 100%;
+    }
+}

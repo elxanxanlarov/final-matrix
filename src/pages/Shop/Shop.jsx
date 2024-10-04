@@ -11,7 +11,7 @@ const Shop = () => {
     (item) => item.lang == t("productLang")
   );
   const [selectedItem, setSelectedItem] = useState(
-    localStorage.getItem("productSort") || "Price, high to low"
+    localStorage.getItem("productSort") || t("shop.dropdown.priceAsc")
   );
   const [categoryItem, setCategoryItem] = useState(
     localStorage.getItem("category") || t("shop.category.all")

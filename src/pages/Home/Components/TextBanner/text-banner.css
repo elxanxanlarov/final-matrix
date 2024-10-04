@@ -1,0 +1,25 @@
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+    
+}
+.text-banner{
+    overflow: hidden;
+    padding: 2rem 0;   
+    white-space: nowrap;
+}
+.text-banner .slide:hover{
+    -o-animation-play-state: paused;
+}
+.text-banner .slide{
+    display: inline-block;
+    animation:5s slide infinite linear;
+}
+.text-banner .slide>div{
+    display: inline;
+    font-size: 1.5rem;
+}

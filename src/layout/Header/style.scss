@@ -60,8 +60,6 @@
     }
 
     .nav {
-       
-    
         .left {
             width: 50%;
         }
@@ -71,7 +69,6 @@
                 width: 5rem;
             }
         }
-
         .right {
             color:#fff;
             .button{
@@ -83,24 +80,7 @@
             .lang-button{
                 padding-top: .5rem !important;
             }
-            .count{
-                position: absolute;
-                top: 0;
-                right: -.5rem;
-                font-size: .7rem;
-                background-color:#B4976C;
-                padding: .1rem;
-                border-radius: 50%;
-                width: 1rem;
-                text-align: center;
-                height: 1rem;
-            }
             
-            .heart{
-                font-size: 1.2rem;
-                color:#fff;
-                position: relative;
-            }
             .user{
                 color:#fff;
             }
@@ -117,7 +97,24 @@
         }
     }
 }
+.navbar .count{
+    position: absolute;
+    top: 0;
+    right: -.5rem;
+    font-size: .7rem;
+    background-color:#B4976C;
+    padding: .1rem;
+    border-radius: 50%;
+    width: 1rem;
+    text-align: center;
+    height: 1rem;
+}
 
+.navbar .heart{
+    font-size: 1.2rem;
+    color:#fff;
+    position: relative;
+}
 .ant-dropdown-menu ,
 .ant-dropdown-menu *,
 .ant-select-dropdown ,
@@ -230,7 +227,7 @@
         background-color:#1A141C;
     }
 }
-.btn{
+.navbar .btn{
     height: 2rem;
     
 }
@@ -253,7 +250,7 @@
     .dark-btn{
         display: none;
     }
-    .heart{
+    .md .heart{
         display: none;
     }
     .navbar > .my-menu{
