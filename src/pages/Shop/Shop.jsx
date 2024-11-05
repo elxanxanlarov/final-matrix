@@ -10,12 +10,16 @@ const Shop = () => {
   const langProduct = productData.filter(
     (item) => item.lang == t("productLang")
   );
+  // console.log(productData);
+  
   const [selectedItem, setSelectedItem] = useState(
     localStorage.getItem("productSort") || t("shop.dropdown.priceAsc")
   );
   const [categoryItem, setCategoryItem] = useState(
     localStorage.getItem("category") || t("shop.category.all")
   );
+  console.log(categoryItem);
+  
   useEffect(() => {
     setCategoryItem(t("productLang") == "en" ? "All" : "Hamısı");
   }, []);
