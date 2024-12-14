@@ -1,4 +1,7 @@
 # E-Commerce React Application
+![image](https://github.com/user-attachments/assets/84113f38-ca7a-4814-a4de-0d44d892bf19)
+
+
 
 This project is a feature-rich e-commerce platform built with React.js, Ant Design, React Router, and React Toastify. It supports multiple pages and functionalities, including user profiles, product listings, a shopping cart, and admin dashboards.
 ### <a target="_blank" href="https://final-matrix.netlify.app" >Demo Link</a>
